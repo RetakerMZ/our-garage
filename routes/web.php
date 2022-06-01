@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.main');
+    return view('landing');
+});
+Route::get('/car', function () {
+    return view('car.car');
 });
