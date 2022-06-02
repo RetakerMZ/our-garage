@@ -84,14 +84,23 @@
         <section class="ftco-section" id="service">
                 <div class="container-fluid bg-light py-5">
                     <div class="container">
-                    <div class="row justify-content-center my-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
+                    <div class="row justify-content-center mt-5">
+            <div class="col-md-7 mb-3 text-center heading-section ftco-animate">
                 <!-- <span class="subheading">Services</span> -->
                 <h2 class="ftco-section">Services</h2>
             </div>
             </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 ">
+                            <div class="services services-2 w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+                                    <div class="text w-100">
+                                    <h3 class="heading mb-2">Lorem</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
                                     <div class="text w-100">
@@ -100,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
                                     <div class="text w-100">
@@ -109,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
                                     <div class="text w-100">
@@ -117,16 +126,6 @@
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="services services-2 w-100 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
-                                    <div class="text w-100">
-                                    <h3 class="heading mb-2">Lorem</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
             </section>
@@ -135,12 +134,12 @@
         <section class="ftco-section" id="terms">
                 <div class="container-fluid py-5">
                     <div class="container">
-                    <div class="row justify-content-center my-5">
+                    <div class="row justify-content-center mt-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
                 <!-- <span class="subheading">Services</span> -->
                 <h2 class="ftco-section">Terms of service</h2>
             </div>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum porro quas, debitis error cum incidunt quibusdam reiciendis laudantium modi magnam dignissimos repellat et quis atque delectus distinctio qui exercitationem recusandae. Incidunt praesentium nam asperiores quia, veniam dolorum ea natus fugit fuga? Repellat reprehenderit, iure obcaecati pariatur quod, sequi ipsam illum quos quam officia eius libero iste omnis eaque ratione, error ullam possimus doloremque! Similique tempore doloribus aspernatur delectus perspiciatis mollitia assumenda id ipsa voluptatem corporis dolor quis repudiandae magni nesciunt omnis quaerat, saepe cum illo consequatur asperiores facere distinctio necessitatibus suscipit. Harum placeat esse neque magni veniam debitis aspernatur!</p>
+                    <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum porro quas, debitis error cum incidunt quibusdam reiciendis laudantium modi magnam dignissimos repellat et quis atque delectus distinctio qui exercitationem recusandae. Incidunt praesentium nam asperiores quia, veniam dolorum ea natus fugit fuga? Repellat reprehenderit, iure obcaecati pariatur quod, sequi ipsam illum quos quam officia eius libero iste omnis eaque ratione, error ullam possimus doloremque! Similique tempore doloribus aspernatur delectus perspiciatis mollitia assumenda id ipsa voluptatem corporis dolor quis repudiandae magni nesciunt omnis quaerat, saepe cum illo consequatur asperiores facere distinctio necessitatibus suscipit. Harum placeat esse neque magni veniam debitis aspernatur!</p>
                 </div>
                         </div>
                     </div>
