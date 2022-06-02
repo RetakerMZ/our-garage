@@ -132,16 +132,21 @@
         <!-- ENDSERVICES -->
         <!-- ABOUT US -->
         <section class="ftco-section" id="terms">
-                <div class="container-fluid py-5">
-                    <div class="container">
+            <div class="container-fluid py-5">
+                <div class="container">
                     <div class="row justify-content-center mt-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <!-- <span class="subheading">Services</span> -->
-                <h2 class="ftco-section">Terms of service</h2>
-            </div>
-                    <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum porro quas, debitis error cum incidunt quibusdam reiciendis laudantium modi magnam dignissimos repellat et quis atque delectus distinctio qui exercitationem recusandae. Incidunt praesentium nam asperiores quia, veniam dolorum ea natus fugit fuga? Repellat reprehenderit, iure obcaecati pariatur quod, sequi ipsam illum quos quam officia eius libero iste omnis eaque ratione, error ullam possimus doloremque! Similique tempore doloribus aspernatur delectus perspiciatis mollitia assumenda id ipsa voluptatem corporis dolor quis repudiandae magni nesciunt omnis quaerat, saepe cum illo consequatur asperiores facere distinctio necessitatibus suscipit. Harum placeat esse neque magni veniam debitis aspernatur!</p>
-                </div>
+                        <div class="col-md-7 text-center heading-section ftco-animate">
+                        <!-- <span class="subheading">Services</span> -->
+                        <h2 class="ftco-section">Terms of service</h2>
                         </div>
+                        <div class="terms_">
+                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                    </div>
                     </div>
                 </div>
             </div>
