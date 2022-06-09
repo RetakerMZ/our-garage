@@ -13021,6 +13021,12 @@ textarea.form-control {
     }        
 }
 /* SERVICES */
+.allcars{
+    padding-top: 5em !important;
+}
+.cardetails{
+    padding-top: 6em !important;
+}
 @media (min-width: 768px) { 
     .services-2 h3{
         font-size: 20px !important;
@@ -13035,9 +13041,51 @@ textarea.form-control {
     .services-2 p{
         font-size: 10px;
     }
+
 /* END SERVICES */
 
 /* END RECENT CAR */
 .carousel-car .text h2{
     font-size: 50px;
 }
+
+/* CAR DETAIL */
+.cardetail_{
+    border: none;
+}
+.cardetail_ p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cardetail_ .card-text span{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #01d28e;
+}
+.cardetail_ .icon__ i{
+color: #01d28e;
+}
+@media (min-width: 768px) { 
+    .cardetail_{
+        border: none;
+    }
+
+    .cardetail_ p{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .cardetail_ .card-text span{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        color: #01d28e;
+    }
+    .cardetail_ .icon__ i{
+    color: #01d28e;
+    font-size: 35px;
+    }
+ }
+/*END CAR DETAIL */

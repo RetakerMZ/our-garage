@@ -19,6 +19,12 @@ Route::get('/', function () {
 Route::get('/car', function () {
     return view('car.car');
 });
+Route::get('/allcar', function () {
+    return view('car.all_car');
+});
+Route::get('/detailcar', function () {
+    return view('car.car_detail');
+});
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });

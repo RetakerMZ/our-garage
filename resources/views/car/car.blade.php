@@ -18,7 +18,7 @@
     <div class="col align-item-center text-center heading-section ftco-animate title">
         <h2 class="ftco-section">FIND YOUR CAR</h2>
         <p>By Type</p>
-        <div class="row">
+        <div class="row ">
           <div class="col-lg-2 col-md-4 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
@@ -72,24 +72,12 @@
   <div class="container pb-5">
     <div class="row pt-3">
       <div class="col align-item-center text-center heading-section ftco-animate title">
-        <h2>OUR CAR'S</h2>
+        <h2>FAVOURITE CAR</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
-        <img src="images/car-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body ourcar-body">
-          <h5 class="card-title">Toyota Agya</h5>
-          <p class="card-text"><span>500k</span> / day</p>
-          <a href="#" class="btn btn-primary btncar">Order now</a>
-          <a href="#" class="btn btncar1">Details</a>
-          <hr>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 align-item-center text-center">
-        <div class="card ourcar__ ">
         <img src="images/car-1.jpg" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
           <h5 class="card-title">Toyota Agya</h5>
