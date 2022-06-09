@@ -124,8 +124,9 @@
           </div>
         </div>
       </div>
-
-
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button type="button" class="btn btn-outline-primary">See More</button>
+    </div>
     </div>
   </div>
 </div>
