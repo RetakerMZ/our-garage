@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/car', function () {
     return view('car.car');
 });
+Route::get('/carousel', function () {
+    return view('layout.carousel');
+});

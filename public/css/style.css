@@ -10620,110 +10620,6 @@ h5,
 .search-wrap-1 h2 {
     font-weight: 600;
 }
-@media (min-width: 992px) { 
-    .car-wrap {
-        margin-bottom: 40px;
-        width: 100% !important;
-        -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-        -moz-box-shadow: 0pxj 5px 12px -1px rgba(0, 0, 0, 0.06);
-        box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-        background: #fff;
-    }
-    .car-wrap .img {
-        width: 100% !important;
-        height: 220px !important;
-    }
-    .car-wrap .text {
-        font-size: 15px !important;
-        border-top: none;
-        padding: 20px 30px 30px;
-    }
-    .car-wrap .text .price {
-        color: #1089ff;
-        margin-bottom: 0;
-        font-weight: 600;
-    }
-    .car-wrap .text .price span {
-        font-size: 12px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.3);
-    }
-    .car-wrap .text h2 {
-        font-size: 20px !important;
-        font-weight: 500;
-    }
-    .car-wrap .text h2 a {
-        font-size: 20px;
-        color: #000000;
-    }
-    .car-wrap .text span.cat {
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.2);
-        display: block;
-        margin-bottom: 0;
-    }
-    .car-wrap .text p.d-block {
-        width: 100%;
-    }
-    .car-wrap .text p.d-block a {
-        width: 50%;
-        font-size: 15px !important;
-    }
-    
- }
-
-.car-wrap {
-    width: 100%;
-    height: 50%;
-    margin-bottom: 40px;
-    -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-    -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
-    background: #fff;
-}
-
-.car-wrap .img {
-    width: 120px;
-    height: 120px;
-}
-.car-wrap .text {
-    text-align: center;
-    font-size: 10px;
-}
-.car-wrap .text .price {
-    color: #1089ff;
-    margin-bottom: 0;
-    font-weight: 600;
-}
-.car-wrap .text .price span {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.3);
-}
-.car-wrap .text h2 {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 15px !important;
-    font-weight: 500;
-}
-.car-wrap .text h2 a {
-    color: #000000;
-}
-.car-wrap .text span.cat {
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.2);
-    display: block;
-    margin-bottom: 0;
-}
-.car-wrap .text p.d-block {
-    width: 100%;
-    padding-bottom: 5px;
-}
-.car-wrap .text p.d-block a {
-    font-size: 10px;
-    font-weight: 500;
-    width: 50%;
-}
 
 .ftco-car-details .services .media-body .icon span {
     color: #1089ff;
@@ -11136,7 +11032,7 @@ h5,
     font-size: 17px;
     font-weight: 500;
 }
-@media (max-width: 575.98px) { 
+@media (min-width: 992px) { 
     .services.services-2 .icon {
         width: 80px !important;
         height: 80px !important;
@@ -11152,21 +11048,40 @@ h5,
         font-weight: 500;
     }
     .terms_{
+        padding-left: 100px;
+        padding-right: 100px;
         margin-top: 25px;
         margin-bottom: -40px;
     }
     .terms__{
-        font-size: 10px;
+        font-size: 15px !important;
         font-weight: 500;
         margin-top: -25px;
     }
     .terms_ .terms1__{
-        font-size: 10px;
+        text-align: start !important;
+        font-size: 15px !important;
         font-weight: 500;
-        text-align: end;
         margin-top: -30px;
     }
  }
+ .terms_{
+    margin-top: 25px;
+    margin-bottom: -40px;
+}
+.terms__{
+    color: #000;
+    font-size: 10px;
+    font-weight: 350;
+    margin-top: -25px;
+}
+.terms_ .terms1__{
+    text-align: end;
+    color: #000;
+    font-size: 10px;
+    font-weight: 350;
+    margin-top: -30px;
+}
 .services.services-2 .icon {
     width: 110px;
     height: 110px;
@@ -11673,7 +11588,7 @@ textarea.form-control {
 .testimony-wrap {
     display: block;
     position: relative;
-    background: white;
+    background:var(--light);
     padding: 0 20px;
 }
 .testimony-wrap .user-img {
@@ -11694,7 +11609,7 @@ textarea.form-control {
 }
 .testimony-wrap .position {
     font-size: 16px;
-    color: #1089ff;
+    color:#01d28e;
 }
 
 @media (max-width: 767.98px) {
@@ -12380,21 +12295,19 @@ textarea.form-control {
 }
 /* JUMBOTRON */
 .jumbot__::before {
-    height: 230px;
-    margin-top: 55px;
-    background-size: cover;
+    height: 200px;
     content: "";
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 .jumbot__ {
     background-size: cover;
-    margin-top: 55px;
-    height: 230px;
+    height: 200px;
 }
 .jumbot__ .display-4 {
     position: absolute;
@@ -12432,7 +12345,7 @@ textarea.form-control {
     }
     .jumbot__ {
         height: 100vh;
-        margin-top: 50px;
+   
         background-size: cover;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
     }
@@ -12444,6 +12357,7 @@ textarea.form-control {
         width: 100%;
         top: 0;
         left: 0;
+        bottom: 0;
         background: rgba(0, 0, 0, 0.7);
         z-index: 1;
     }
@@ -12758,3 +12672,372 @@ textarea.form-control {
     }
 }
 /* END SECTION HEADING */
+
+
+
+/* CAROUSEL */
+.carousel-item img{
+    margin-top: 50px;
+}
+.carousel-item{
+    height: 270px;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.carousel-item::before{
+    height: 264px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.carousel-caption{
+    margin-bottom: 70px;
+}
+.carousel-caption h5{
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.carousel-caption .capt__{
+    margin-top: 50px !important;
+    text-align: start;
+    margin-right: 10px;
+}
+.carousel-caption .capt__2{
+    text-align: end;
+}
+.carousel-caption span{
+    font-weight: 200;
+}
+.carousel-caption p{
+    margin-top: -10px;
+    font-size: 6px;
+}
+@media (min-width: 992px) { 
+    .carousel-item img{
+        margin-top: 50px;
+    }
+    .carousel-item{
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    .carousel-item::before{
+        margin-top: 20px;
+        height: 100vh;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.7;
+    }
+    .carousel-caption h5{
+        font-size: 70px;
+        margin-top: -300px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .carousel-caption p{
+        margin-top: -15px;
+        font-size: 18px;
+    }
+    .carousel-caption .capt__2{
+        text-align: start !important;
+    }
+ }
+
+
+/*END CAROUSEL */
+
+/* CAR PAGE  FIND CAR BY MODEL*/
+.car__{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.categoryimg img{
+    /* border: none; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.category-car p{
+    font-weight: 500;
+    font-size: 10px;
+}
+.title h2{
+    font-size: small;
+    font-weight: 700;
+}
+.title p{
+    color: #000;
+    font-size: 10px;
+    margin-top: -15px;
+}
+.tipe__ p{
+    font-size: 10px;
+    color: #000;
+}
+@media (min-width: 768px) { 
+    .categoryimg img{
+        /* border: none; */
+        padding: 10px;
+        width: 15em;
+        height: 8em;
+        display: block;
+
+        margin-bottom: 20px;
+        cursor: pointer;
+    }  
+    .car__{
+        display: block;
+        margin-left: -30px;
+        margin-right: auto;
+    }
+    .category-car p{
+        font-weight: 500;
+        font-size: 15px;
+        text-align: end;
+    }
+    .title h2{
+        font-size:40px;
+        font-weight: 700;
+    }
+    .title p{
+        color: #000;
+        font-size: 20px;
+        margin-top: -15px;
+    }
+
+ }
+/* END CAR PAGE  FIND CAR BY MODEL*/
+/* RECENT CAR */
+@media (min-width: 992px) { 
+    .car-wrap {
+        margin-bottom: 40px;
+        width: 100% !important;
+        -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+        -moz-box-shadow: 0pxj 5px 12px -1px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+        background: #fff;
+    }
+    .car-wrap .img {
+        width: 100% !important;
+        height: 220px !important;
+    }
+    .car-wrap .text {
+        font-size: 15px !important;
+        border-top: none;
+        padding: 20px 30px 30px;
+    }
+    .car-wrap .text h2 a {
+        font-size: 20px !important;
+        border-top: none;
+        padding: 20px 30px 30px;
+    }
+    .car-wrap .text .price {
+        color: #1089ff;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+    .car-wrap .text .price span {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .car-wrap .text__ h2 {
+        font-size: 20px !important;
+        font-weight: 500;
+    }
+    .car-wrap .text h2 a {
+        font-size: 50px;
+        color: #000000;
+    }
+    .car-wrap .text span.cat {
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.2);
+        display: block;
+        margin-bottom: 0;
+    }
+    .car-wrap .text p.d-block {
+        width: 100%;
+    }
+    .car-wrap .text p.d-block a {
+        width: 50%;
+        font-size: 15px !important;
+    }
+    .card-wrap .text__ h2{
+        font-size: 20px;
+    }
+    
+ }
+
+.car-wrap {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    width: 220px;
+    height: 100%;
+
+}
+
+.car-wrap .img {
+    width: 220px;
+    height: 100px;
+}
+.car-wrap .text {
+    text-align: center;
+    font-size: 10px;
+}
+.car-wrap .text .price {
+    color: #1089ff;
+    font-weight: 600;
+}
+.car-wrap .text .price span {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+.car-wrap .text h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px !important;
+    font-weight: 500;
+}
+.car-wrap .text h2 a {
+    color: #000000;
+    font-size: 10px;
+}
+.car-wrap .text span.cat {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+.car-wrap .text p.d-block {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.car-wrap .text p.d-block a {
+    font-size: 6px;
+    font-weight: 600;
+    width: 50%;
+}
+.ourcar__{
+    width: 8rem;
+    border: none;
+    margin-bottom: 10px;
+    background-color: var(--light);
+}
+.ourcar-body h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -10px;
+
+}
+.ourcar-body span {
+    margin-top: -15px;
+}
+.ourcar-body p{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: end;
+}
+.ourcar-body p span{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: end;
+    color:#007bff;
+}
+.ourcar__ .btncar {
+    margin-top: -15px;
+    font-size: 8px;
+    font-weight: 500;
+}
+.ourcar__ .btncar1 {
+    margin-top: -15px;
+    font-size: 8px;
+    font-weight: 500;
+    color: var(--light);
+    background-color: #01d28e;
+}
+@media (min-width: 768px) { 
+    .ourcar__{
+        width: 20rem;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .ourcar-body h5{
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: -10px;
+    
+    }
+    .ourcar-body span {
+        margin-top: -15px;
+    }
+    .ourcar-body p{
+        font-size: 15px;
+        font-weight: 300;
+        text-align: end;
+    }
+    .ourcar-body p span{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: end;
+        color:#007bff;
+    }
+    .ourcar__ .btncar {
+        margin-top: -15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .ourcar__ .btncar1 {
+        margin-top: -15px;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--light);
+        background-color: #01d28e;
+    }        
+}
+/* SERVICES */
+@media (min-width: 768px) { 
+    .services-2 h3{
+        font-size: 20px !important;
+    }
+    .services-2 p{
+        font-size: 15px !important;
+    }
+ }
+    .services-2 h3{
+        font-size: 15px;
+    }
+    .services-2 p{
+        font-size: 10px;
+    }
+/* END SERVICES */
+
+/* END RECENT CAR */
+.carousel-car .text h2{
+    font-size: 50px;
+}
