@@ -130,12 +130,37 @@
                         <h2 class="ftco-section">Terms of service</h2>
                         </div>
                         <div class="terms_">
-                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
-                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
-                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
-                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
-                        <p class="mb-5 terms__">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
-                        <p class="mb-5 terms1__ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam deserunt doloremque totam dolore, quis sapiente ratione dolorum adipisci consequatur natus modi, quaerat veritatis cum!<p>
+                        <p class="mb-5 terms__"><i class="fa-solid fa-1"></i>_Penyewa bersedia mematuhi, menyetujui & menandatangani syarat & Ketentuan Surat Perjanjian Sewa dengan keadaan tidak dalam paksaan<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-2"></i>_Penyewa harus memberikan data SIM, KTP, no kamar (hotel), no hp dan tiket PP serta menginformasikan media sosial yg dimiliki (contoh: ig,fb).
+                        Kami tidak akan menggunakan data-data itu untuk hal-hal yang melanggar hukum.<p>
+                        <p class="mb-5 terms__"><i class="fa-solid fa-3"></i>_Jika terjadi kerusakan baik sengaja ataupun tidak sengaja merupakan tanggung jawab penyewa mobil/kamera sehingga wajib menanggung biaya perbaikan dan menanggung biaya sewa selama waktu pengerjaan perbaikan dengan biaya minimal Rp.700.000. (Tergantung kerusakan)
+                       <br> <span>•</span>  kerusakan ringan yg mengakibatkan mobil lecet dikenakan biaya claim ansuransi minor 500.000 + biaya sewa selama pengerjaan perbaikan
+                       <br> <span>•</span>  kerusakan fatal yg mengakibatkan mobil berlubang, ganti sparepart, tidak bisa jalan, kaca pecah, terbakar akan dikenakan biaya claim ansuransi major  3.000.000 + biaya sewa selama pengerjaan perbaikan<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-4"></i>_Jika penyewa menggunakan mobil/kamera melebihi batas waktu, maka akan dikenakan biaya overtime 30K/jam untuk unit dengan harga dibawah 300k dan 10%/ jam untuk unit dgn harga diatas 300k . Untuk kelebihan lebih dari 5 Jam, akan dihitung satu hari.<p>
+                        <p class="mb-5 terms__"><i class="fa-solid fa-5"></i>_Untuk sewa mobil tanpa supir/kamera hanya diperbolehkan untuk wilayah pulau Bali saja dan harus menyerahkan identitas penyewa seperti KTP/PASPOR.<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-6"></i>_Jika penyewa membatalkan penyewaan yang sudah di booked dengan alasan apapun juga penyewa berkewajiban membayar biaya kerugian sebesar 50% (cancelation fee) dari harga sewa. Pembatalan sewa mobil/kamera DP tidak dapat diminta kembali.<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-7"></i>_Sistem pembayaran sewa mobil yaitu dengan uang muka minimal Rp. 200.000 (booked) dan sisanya dibayar pada saat kendaraan diterima di hotel atau di Airport dengan full payment.
+                        Sewa kamera/motor dengan uang muka utk booking Rp. 50.000<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-8"></i>_Jika anda mengirim melalui Bank BCA, cukup info kepada kami via SMS, email, telephone, kami akan check di internet.<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-9"></i>_Kami melayani dengan free antar jemput dibandara dengan catatan biaya karcis parkir bandara ditanggung Penyewa. Adapun batas jam kerja pukul 22.00 jika lewat akan ada biaya lembur karyawan Rp. 50.000<p>
+                        <p class="mb-5 terms1__ "><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i>_Kami berhak menolak atau tidak memberikan izin untuk penyewaan mobil/kamera di tempat kami dengan pertimbangan atau alasan tertentu seperti data pribadi penyewa tidak lengkap, dll.<p>
+                        <p class="mb-5 terms2__ ">Untuk booking silahkan Penyewa memberikan data KTP, SIM A, Tiket PP, Hotel di Bali (bisa difoto) terlebih dahulu,
+                        Serta mengisi data dibawah ini dengan lengkap.</p>
+                        <p class="terms3__">
+                        <br>Nama Penyewa :
+                        <br>Alamat/Penginapan :
+                        <br>Unit sewa :
+                        <br>Tgl dan jam sewa :
+                        <br>Tgl dan jam kembali :
+                        <br>Tempat antar :
+                        <br>Tempat ambil :
+                        <br>Lama Sewa :
+                        <br>Sosial media penyewa :
+                        <br>No hp :
+                        <br>*lampirkan foto: - KTP - SIM A - Ticket PP - Booking details Hotel
+                        </p>
+
+                        
                     </div>
                     </div>
                 </div>
