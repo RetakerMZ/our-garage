@@ -28,3 +28,6 @@ Route::get('/detailcar', function () {
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
+Route::get('/admin', function () {
+    return view('admin.layouts.main');
+});
