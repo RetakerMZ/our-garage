@@ -12,8 +12,8 @@
     <div class="card cardetail_">
   <img src="images/tipe.png" class="card-img-top" alt="...">
   <div class="card-body mx-auto">
-      <h1 class="text-center">CAR NAME HERE!!!!</h1>
-  <p class="card-text"><span>500k</span> / day</p>
+      <h1 class="text-center ftco-animate name">CAR NAME HERE!!!!</h1>
+  <p class="card-text ftco-animate"><span>500k</span> / day</p>
     <div class="row">
     <div class="col-md col-6 d-flex align-self-stretch ms-auto ftco-animate">
             <div class="media block-6 services">
@@ -76,7 +76,7 @@
             </div>      
           </div> -->
           <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate">
-      <button type="button" class="btn btn-outline-primary">RENT NOW!</button>
+      <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
     </div>
           
     </div>
