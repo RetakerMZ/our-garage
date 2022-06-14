@@ -20,7 +20,7 @@ class CreateCarTable extends Migration
             $table->unsignedInteger('seat');
             $table->string('transmisi');
             $table->string('tipe_mobil')->nullable();
-            $table->double('harga')->unsigned();
+            $table->float('harga', 10, 0);
         });
     }
 
