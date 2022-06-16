@@ -32,5 +32,6 @@ Route::get('/carousel', function () {
 Route::get('/admin', function () {
     return view('admin.layouts.main');
 });
+
 Route::get('/create', [CarController::class, 'create'])->name('create');
 Route::get('/index', [CarController::class, 'index'])->name('index');
