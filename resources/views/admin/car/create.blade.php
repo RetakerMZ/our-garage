@@ -93,7 +93,7 @@
                   <select class="form-control select2" style="width: 100%;">
                   <option value="" disabled selected hidden>Choose Transmition</option>
                     <option>Manual</option>
-                    <option>Matic</option>
+                    <option>Automatic</option>
                   </select>
                 </div>
                 <div class="form-group">
