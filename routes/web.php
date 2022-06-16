@@ -34,3 +34,6 @@ Route::get('/admin', function () {
 Route::get('/tambah', function () {
     return view('admin.car.tambahmobil');
 });
+Route::get('/index', function () {
+    return view('admin.car.index');
+});
