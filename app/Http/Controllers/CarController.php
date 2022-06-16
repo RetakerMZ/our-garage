@@ -10,8 +10,13 @@ class CarController extends Controller
     public function index()
     {
         $car = Car::all();
-        dd($car);
-        return view('admin.car.create',compact('cars'));
+        return view('admin.car.index',compact('car'));
+    }
+
+    public function create()
+    {
+        $car = Car::all();
+        return view('admin.car.create',compact('car'));
     }
 
 }

@@ -69,24 +69,25 @@
                   <label>Kursi</label>
                   <select class="form-control select2" style="width: 100%;">
                   <option value="" disabled selected hidden>Choose seat</option>
-                    <option>2 seat</option>
-                    <option>4 seat</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>6</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label>Transmisi</label>
                   <select class="form-control select2" style="width: 100%;">
                   <option value="" disabled selected hidden>Choose Transmition</option>
-                    <option>Manual</option>
-                    <option>Automatic</option>
+                    <option>manual</option>
+                    <option>automatic</option>
                   </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
+                    <label for="exampleInputFile">Gambar Mobil</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        <input type="file" class="form-control" name="gambar" id="gambar"
+                          accept="image/png,image/jpeg,image/jpg" value="{{old('gambar') }}">
                       </div>
                     </div>
                   </div>

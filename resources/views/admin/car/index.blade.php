@@ -18,13 +18,14 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-              <button type="submit" class="btn btn-primary">Tambah Data +</button>
+              <button type="submit" class="btn btn-primary" href="{{ route('admin.car.create') }}">Tambah Data +</button>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
+                      <th>Id</th>
                       <th>Nama Mobil</th>
                       <th>Kategory</th>
                       <th>Harga</th>
@@ -36,14 +37,16 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ($car as $row)
                     <tr>
-                      <td>Agya</td>
-                      <td>LCGC</td>
-                      <td>50.000</td>
-                      <td>Pertalite</td>
-                      <td>Matic</td>
-                      <td>4</td>
-                      <td>IMG</td>
+                      <td>{{$row->id}}</td>
+                      <td>{{$row->nama}}</td>
+                      <td>{{$row->tipe_mobil}}</td>
+                      <td>{{$row->harga}}</td>
+                      <td>{{$row->fuel}}</td>
+                      <td>{{$row->transmition}}</td>
+                      <td>{{$row->seat}}</td>
+                      <td>{{$row->id}}</td>
                       <td>
                         <div class="btn-aksi">
                          <button type="submit" class="btn btn-info mb-1">edit</button>
@@ -51,6 +54,8 @@
                         </div>
                       </td>
                     </tr>
+                    @endforeach
+                    
                   </tbody>
                 </table>
               </div>
