@@ -11048,8 +11048,8 @@ h5,
         font-weight: 500;
     }
     .terms_{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
         margin-top: 25px;
         margin-bottom: -40px;
     }
@@ -11057,19 +11057,20 @@ h5,
         font-size: 15px !important;
         font-weight: 500;
         margin-top: -25px;
+        text-align: justify;
     }
     .terms__ span{
         font-weight: 900;
         color:#000;
     }
     .terms_ .terms1__{
-        text-align: start !important;
+        text-align: justify !important;
         font-size: 15px !important;
         font-weight: 500;
         margin-top: -30px;
     }
     .terms_ .terms2__{
-        text-align: start !important;
+        text-align: justify !important;
         font-size: 15px !important;
         font-weight: 600;
         margin-top: -30px;
@@ -11094,7 +11095,7 @@ h5,
     margin-top: -25px;
 }
 .terms_ .terms1__{
-    text-align: end;
+    text-align: start;
     color: #000;
     font-size: 10px;
     font-weight: 350;
@@ -13085,6 +13086,9 @@ textarea.form-control {
 .cardetail_{
     border: none;
 }
+.cardetail_ .name{
+    font-size: 15px;
+}
 .cardetail_ p{
     text-align: center;
     font-size: 15px;
@@ -13102,6 +13106,9 @@ color: #01d28e;
 @media (min-width: 768px) { 
     .cardetail_{
         border: none;
+    }
+    .cardetail_ .name{
+        font-size: 35px;
     }
 
     .cardetail_ p{

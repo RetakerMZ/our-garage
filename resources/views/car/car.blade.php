@@ -75,15 +75,15 @@
         <h2>FAVOURITE CAR</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row ftco-animate">
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
         <img src="images/car-1.jpg" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
           <h5 class="card-title">Toyota Agya</h5>
           <p class="card-text"><span>500k</span> / day</p>
-          <a href="#" class="btn btn-primary btncar">Order now</a>
-          <a href="#" class="btn btncar1">Details</a>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
           <hr>
           </div>
         </div>
@@ -94,8 +94,8 @@
           <div class="card-body ourcar-body">
           <h5 class="card-title">Toyota Agya</h5>
           <p class="card-text"><span>500k</span> / day</p>
-          <a href="#" class="btn btn-primary btncar">Order now</a>
-          <a href="#" class="btn btncar1">Details</a>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
           <hr>
           </div>
         </div>
@@ -106,13 +106,13 @@
           <div class="card-body ourcar-body">
           <h5 class="card-title">Toyota Agya</h5>
           <p class="card-text"><span>500k</span> / day</p>
-          <a href="#" class="btn btn-primary btncar">Order now</a>
-          <a href="#" class="btn btncar1">Details</a>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
           <hr>
           </div>
         </div>
       </div>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
       <button type="button" class="btn btn-outline-primary">See More</button>
     </div>
     </div>
@@ -124,7 +124,7 @@
 <section class="ftco-section" id="terms">
             <div class="container-fluid py-5">
                 <div class="container">
-                    <div class="row justify-content-center mt-5">
+                    <div class="row justify-content-center mt-5 ftco-animate">
                         <div class="col-md-7 text-center heading-section ftco-animate">
                         <!-- <span class="subheading">Services</span> -->
                         <h2 class="ftco-section">Terms of service</h2>
@@ -146,7 +146,7 @@
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i>_Kami berhak menolak atau tidak memberikan izin untuk penyewaan mobil/kamera di tempat kami dengan pertimbangan atau alasan tertentu seperti data pribadi penyewa tidak lengkap, dll.<p>
                         <p class="mb-5 terms2__ ">Untuk booking silahkan Penyewa memberikan data KTP, SIM A, Tiket PP, Hotel di Bali (bisa difoto) terlebih dahulu,
                         Serta mengisi data dibawah ini dengan lengkap.</p>
-                        <p class="terms3__">
+                        <p class=" terms3__">
                         <br>Nama Penyewa :
                         <br>Alamat/Penginapan :
                         <br>Unit sewa :
