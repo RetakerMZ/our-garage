@@ -15,14 +15,11 @@
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
-<div class="wrapper">
+
   @include('admin.layouts.nav')
   
 
   @yield('content')
-        <div class="card-footer">
-          Footer
-        </div>
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->

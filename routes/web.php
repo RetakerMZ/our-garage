@@ -31,3 +31,6 @@ Route::get('/carousel', function () {
 Route::get('/admin', function () {
     return view('admin.layouts.main');
 });
+Route::get('/tambah', function () {
+    return view('admin.car.tambahmobil');
+});
