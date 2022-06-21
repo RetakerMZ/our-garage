@@ -18,7 +18,7 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-              <button type="submit" class="btn btn-primary" href="{{ route('car.create') }}">Tambah Data +</button>
+                <a href="{{ route('car.create') }}"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>              
               </div>
               <!-- /.card-header -->
               <div class="card-body">
