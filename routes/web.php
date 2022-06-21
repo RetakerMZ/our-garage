@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,6 @@ Route::get('/carousel', function () {
 Route::get('/admin', function () {
     return view('admin.layouts.main');
 });
-Route::get('/tambah', function () {
-    return view('admin.car.tambahmobil');
-});
-Route::get('/index', function () {
-    return view('admin.car.index');
-});
+
+Route::get('/create', [CarController::class, 'create'])->name('create');
+Route::get('/index', [CarController::class, 'index'])->name('index');
