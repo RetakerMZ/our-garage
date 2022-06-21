@@ -29,10 +29,10 @@
                       <th>Kategory</th>
                       <th>Harga</th>
                       <th>Fuel</th>
-                      <th>Transmition</th>
-                      <th>Seat</th>
+                      <th style="width: 10px">Transmition</th>
+                      <th style="width: 10px">Seat</th>
                       <th>Gambar</th>
-                      <th style="width: 10px">Aksi</th>
+                      <th style="width: 50px">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
