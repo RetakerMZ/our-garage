@@ -32,6 +32,7 @@ Route::get('/carousel', function () {
 });
 Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('landing');
+    Route::get('/car/category', [CarController::class, 'category'])->name('car.category');
     Route::get('/car/create', [CarController::class, 'create'])->name('car.create');
     Route::get('/car/index', [CarController::class, 'index'])->name('car.index');
 });
