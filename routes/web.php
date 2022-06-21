@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,9 +30,9 @@ Route::get('/detailcar', function () {
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
-Route::get('/admin', function () {
-    return view('admin.layouts.main');
+Route::prefix('admin')->group(function() {
+    Route::get('/', [AdminController::class, 'landing'])->name('landing');
+    Route::get('/car/create', [CarController::class, 'create'])->name('car.create');
+    Route::get('/car/index', [CarController::class, 'index'])->name('car.index');
 });
 
-Route::get('/create', [CarController::class, 'create'])->name('create');
-Route::get('/index', [CarController::class, 'index'])->name('index');
