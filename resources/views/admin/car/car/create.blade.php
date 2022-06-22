@@ -44,24 +44,26 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
+            <form action="../car/insert" method="POST" enctype="multipart/form-data">
+                @csrf
             <div class="row">
               <div class="col-md-6">
               <div class="form-group">
                     <label for="exampleInputEmail1">Nama Mobil</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="Nama Mobil">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Harga</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="number" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000">
                   </div>
                 <div class="form-group">
                   <label>Bahan Bakar</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose Fuel</option>
-                    <option>Premium</option>
-                    <option>Pertalite</option>
-                    <option>Pertamax</option>
-                    <option>Pertamax Turbo</option>>
+                  <select name="fuel" class="form-control select2" style="width: 100%;">
+                  <option selected>Choose Fuel</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Pertalite">Pertalite</option>
+                    <option value="Pertamax">Pertamax</option>
+                    <option value="Pertamax Turbo">Pertamax Turbo</option>>
                   </select>
                 </div>
               </div>
@@ -69,26 +71,35 @@
               <div class="col-md-6">
               <div class="form-group">
                   <label>Kursi</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose seat</option>
-                    <option>2</option>
-                    <option>4</option>
-                    <option>6</option>
+                  <select name="seat" class="form-control select2" style="width: 100%;">
+                  <option selected>Choose seat</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
                   </select>
                 </div>
                 <div class="form-group">
+                    <label for="tipe_mobil">Tipe Mobil</label>
+                    <select class="form-control" id="tipe_mobil" name="tipe_mobil">
+                        <option value="" selected disabled>Pilih Kategori</option>
+                        @foreach ($car_type as $car_types)
+                        <option>{{$car_types->tipe_mobil}}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
                   <label>Transmisi</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose Transmition</option>
-                    <option>manual</option>
-                    <option>automatic</option>
+                  <select name="transmition" class="form-control select2" style="width: 100%;">
+                  <option selected>Choose Transmition</option>
+                    <option value="manual">manual</option>
+                    <option value="automatic">automatic</option>
                   </select>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Gambar Mobil</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="form-control" name="gambar" id="gambar"
+                        <input type="file" name="gambar" class="form-control" id="gambar"
                           accept="image/png,image/jpeg,image/jpg" value="{{old('gambar') }}">
                       </div>
                     </div>
@@ -105,7 +116,7 @@
 
               <!-- /.card-body -->
             </div>
-            
+
             <!-- /.card -->
           </div>
         </div>

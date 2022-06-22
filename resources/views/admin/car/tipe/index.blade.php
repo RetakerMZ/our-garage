@@ -18,7 +18,7 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-              <button type="submit" class="btn btn-primary" href="{{ route('car.create') }}">Tambah Data +</button>
+                <a href="../tipe/create"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -32,7 +32,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($cartype as $row)
+                    @foreach ($car_type as $row)
                     <tr>
                       <td>{{$row->id}}</td>
                       <td>{{$row->tipe_mobil}}</td>
@@ -45,7 +45,7 @@
                       </td>
                     </tr>
                     @endforeach
-                    
+
                   </tbody>
                 </table>
               </div>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CarTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,8 +33,16 @@ Route::get('/carousel', function () {
 });
 Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('landing');
-    Route::get('/car/category', [CarController::class, 'category'])->name('car.category');
-    Route::get('/car/create', [CarController::class, 'create'])->name('car.create');
-    Route::get('/car/index', [CarController::class, 'index'])->name('car.index');
+
+    //Kategori Mobil
+    Route::get('/tipe/index', [CarTypeController::class, 'index'])->name('car.tipe.index');
+    Route::get('/tipe/create', [CarTypeController::class, 'create'])->name('car.tipe.create');
+    Route::post('/tipe/insert', [CarTypeController::class, 'insert'])->name('car.tipe.insert');
+
+    //Mobil
+    Route::get('/car/create', [CarController::class, 'create'])->name('car.car.create');
+    Route::get('/car/index', [CarController::class, 'index'])->name('car.car.index');
+    Route::post('/car/insert', [CarController::class, 'insert'])->name('car.car.insert');
+
 });
 
