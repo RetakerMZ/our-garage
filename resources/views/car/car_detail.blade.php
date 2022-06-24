@@ -9,10 +9,11 @@
         <h2>CAR DETAIL'S</h2>
       </div>
     </div>
+    @foreach ($details as $detail)
     <div class="card cardetail_">
   <img src="images/tipe.png" class="card-img-top" alt="...">
   <div class="card-body mx-auto">
-      <h1 class="text-center ftco-animate name">CAR NAME HERE!!!!</h1>
+      <h1 class="text-center ftco-animate name">{{$detail->nama}}</h1>
   <p class="card-text ftco-animate"><span>500k</span> / day</p>
     <div class="row">
     <div class="col-md col-6 d-flex align-self-stretch ms-auto ftco-animate">
@@ -60,6 +61,7 @@
               </div>
             </div>      
           </div>
+          @endforeach
           <!-- <div class="col-md col-6 d-flex align-self-stretch ms-auto ftco-animate">
             <div class="media block-6 services">
               <div class="media-body py-md-4">
