@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\Car;
 use App\Models\CarType;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 
 class CarTypeController extends Controller
