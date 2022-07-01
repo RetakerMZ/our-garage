@@ -16,7 +16,8 @@
         <img src="images/car-1.jpg" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
           <h5 class="card-title">{{$allcar->nama}}</h5>
-          <p class="card-text"><span>{{$allcar->harga}}</span> / day</p>
+          <p class="card-text">{{$allcar->transmition}}</p>
+          <p class="card-text "><span>{{$allcar->harga}}K</span> / day</p>
           <a href="#" class="btn btn-primary btncar">Order now</a>
           <a href="#" class="btn btncar1">Details</a>
           <hr>

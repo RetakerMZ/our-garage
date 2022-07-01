@@ -37,7 +37,7 @@
 <!-- END CAR TYPE -->
 
 <!-- OUR CAR -->
-<div class="container-fluid bg-light py-3">
+<div class="container-fluid bg-light py-5">
   <div class="container pb-5">
     <div class="row pt-3">
       <div class="col align-item-center text-center heading-section ftco-animate title">
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="row ftco-animate">
-      @foreach ($car as $c)
+    @foreach ($car as $c)
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
         <img src="images/car-1.jpg" class="card-img-top" alt="...">
@@ -63,6 +63,7 @@
       <button type="button" class="btn btn-outline-primary">See More</button>
     </div>
     </div>
+  </div>
   </div>
 </div>
 <!-- END OUR CAR -->
@@ -91,23 +92,7 @@
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-8"></i>_Jika anda mengirim melalui Bank BCA, cukup info kepada kami via SMS, email, telephone, kami akan check di internet.<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-9"></i>_Kami melayani dengan free antar jemput dibandara dengan catatan biaya karcis parkir bandara ditanggung Penyewa. Adapun batas jam kerja pukul 22.00 jika lewat akan ada biaya lembur karyawan Rp. 50.000<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i>_Kami berhak menolak atau tidak memberikan izin untuk penyewaan mobil/kamera di tempat kami dengan pertimbangan atau alasan tertentu seperti data pribadi penyewa tidak lengkap, dll.<p>
-                        <p class="mb-5 terms2__ ">Untuk booking silahkan Penyewa memberikan data KTP, SIM A, Tiket PP, Hotel di Bali (bisa difoto) terlebih dahulu,
-                        Serta mengisi data dibawah ini dengan lengkap.</p>
-                        <p class=" terms3__">
-                        <br>Nama Penyewa :
-                        <br>Alamat/Penginapan :
-                        <br>Unit sewa :
-                        <br>Tgl dan jam sewa :
-                        <br>Tgl dan jam kembali :
-                        <br>Tempat antar :
-                        <br>Tempat ambil :
-                        <br>Lama Sewa :
-                        <br>Sosial media penyewa :
-                        <br>No hp :
-                        <br>*lampirkan foto: - KTP - SIM A - Ticket PP - Booking details Hotel
-                        </p>
-
-                        
+                       
                     </div>
                     </div>
                 </div>
