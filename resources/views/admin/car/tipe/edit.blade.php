@@ -12,7 +12,9 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Data Mobil</h1>
+          <a href="{{ route('car.tipe.index') }}" class="nav-link">
+            <h1>Tambah Data Tipe Mobil</h1>
+</a>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -42,59 +44,30 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
+            <form action="{{ route('car.tipe.update', $car_type->id )}}" method="POST" enctype="multipart/form-data">
+                @csrf
             <div class="row">
               <div class="col-md-6">
               <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Mobil</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputEmail1">Tipe Mobil</label>
+                    <input type="text" name="tipe_mobil" class="form-control" id="exampleInputEmail1" placeholder="Tipe Mobil"
+                    value="{{ $car_type->tipe_mobil }}">
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Harga</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                <div class="form-group">
-                  <label>Bahan Bakar</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose Fuel</option>
-                    <option>Premium</option>
-                    <option>Pertalite</option>
-                    <option>Pertamax</option>
-                    <option>Pertamax Turbo</option>>
-                  </select>
-                </div>
-              </div>
               <!-- /.col -->
               <div class="col-md-6">
-              <div class="form-group">
-                  <label>Kursi</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose seat</option>
-                    <option>2</option>
-                    <option>4</option>
-                    <option>6</option>
-                  </select>
-                </div>
                 <div class="form-group">
-                  <label>Transmisi</label>
-                  <select class="form-control select2" style="width: 100%;">
-                  <option value="" disabled selected hidden>Choose Transmition</option>
-                    <option>manual</option>
-                    <option>automatic</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">Gambar Mobil</label>
+                    <label for="exampleInputFile">Gambar Tipe Mobil</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="form-control" name="gambar" id="gambar"
-                          accept="image/png,image/jpeg,image/jpg" value="{{old('gambar') }}">
+                        <input type="file" name="gambar" class="form-control" id="gambar"
+                          accept="image/png,image/jpeg,image/jpg" value="{{ $car_type->gambar }}">
                       </div>
                     </div>
                   </div>
               </div>
               <div class="mx-auto">
                   <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                  <button type="btn" class="btn btn-danger">cancel</button>
+                  <a class="btn btn-danger" href="{{ route('car.tipe.index') }}">cancel</a>
             </div>
               </form>
             </div>
@@ -103,7 +76,7 @@
 
               <!-- /.card-body -->
             </div>
-            
+
             <!-- /.card -->
           </div>
         </div>

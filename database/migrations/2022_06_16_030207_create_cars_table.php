@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('fuel');
             $table->string('seat');
+            $table->float('harga');
             $table->enum('transmition',['manual','automatic']);
             $table->string('gambar');
             $table->string('tipe_mobil');
