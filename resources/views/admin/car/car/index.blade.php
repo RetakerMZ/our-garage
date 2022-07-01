@@ -29,8 +29,8 @@
                       <th>Kategori</th>
                       <th>Harga</th>
                       <th>Fuel</th>
-                      <th>Transmition</th>
-                      <th>Seat</th>
+                      <th style="width: 10px">Transmition</th>
+                      <th style="width: 10px">Seat</th>
                       <th>Gambar</th>
                       <th>Created At</th>
                       <th>Updated At</th>
