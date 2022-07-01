@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
 {
-    use HasFactory;
-    protected $guarded = [  ];
+    protected $table = 'cars';
+
+    protected $fillable = [
+		'nama',
+		'fuel',
+        'seat',
+		'harga',
+        'transmition',
+        'gambar',
+		'tipe_mobil',
+	];
 }
+
