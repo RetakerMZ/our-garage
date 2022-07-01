@@ -18,29 +18,31 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-                <a href="../tipe/create"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
+                <a  href="{{ route('car.tipe.create') }}"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
-                      <th>Id</th>
                       <th>Tipe_mobil</th>
                       <th>Gambar</th>
+                      <th>Created At</th>
+                      <th>Updated At</th>
                       <th style="width: 10px">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach ($car_type as $row)
                     <tr>
-                      <td>{{$row->id}}</td>
                       <td>{{$row->tipe_mobil}}</td>
                       <td>{{$row->gambar}}</td>
+                      <td>{{$row->created_at}}</td>
+                      <td>{{$row->updated_at}}</td>
                       <td>
                         <div class="btn-aksi">
-                         <button type="submit" class="btn btn-info mb-1">edit</button>
-                         <button type="btn" class="btn btn-danger">delete</button>
+                            <a  href="{{ route('car.tipe.edit', $row->id) }}" ><button type="submit" class="btn btn-info mb-1">edit</button></a>
+                            <a  href="{{ route('car.tipe.delete', $row->id) }}" ><button type="btn" class="btn btn-danger">delete</button></a>
                         </div>
                       </td>
                     </tr>

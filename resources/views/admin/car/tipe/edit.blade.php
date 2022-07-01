@@ -44,13 +44,14 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <form action="../tipe/insert" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('car.tipe.update', $car_type->id )}}" method="POST" enctype="multipart/form-data">
                 @csrf
             <div class="row">
               <div class="col-md-6">
               <div class="form-group">
                     <label for="exampleInputEmail1">Tipe Mobil</label>
-                    <input type="text" name="tipe_mobil" class="form-control" id="exampleInputEmail1" placeholder="Tipe Mobil">
+                    <input type="text" name="tipe_mobil" class="form-control" id="exampleInputEmail1" placeholder="Tipe Mobil"
+                    value="{{ $car_type->tipe_mobil }}">
                   </div>
               <!-- /.col -->
               <div class="col-md-6">
@@ -59,7 +60,7 @@
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" name="gambar" class="form-control" id="gambar"
-                          accept="image/png,image/jpeg,image/jpg" value="{{old('gambar') }}">
+                          accept="image/png,image/jpeg,image/jpg" value="{{ $car_type->gambar }}">
                       </div>
                     </div>
                   </div>

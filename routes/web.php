@@ -43,6 +43,10 @@ Route::prefix('admin')->group(function() {
     Route::get('/car/create', [CarController::class, 'create'])->name('car.car.create');
     Route::get('/car/index', [CarController::class, 'index'])->name('car.car.index');
     Route::post('/car/insert', [CarController::class, 'insert'])->name('car.car.insert');
+    Route::get('/car/{id}', [CarController::class, 'edit'])->name('car.car.edit');
+    Route::post('/car/update/{id}', [CarController::class, 'update'])->name('car.car.update');
+    Route::get('/car/delete/{id}', [CarController::class, 'delete'])->name('car.car.delete');
+
 
 });
 

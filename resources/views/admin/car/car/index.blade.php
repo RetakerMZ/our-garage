@@ -18,39 +18,41 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-                <a href="../car/create"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
+                <a  href="{{ route('car.car.create') }}"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
-                      <th>Id</th>
                       <th>Nama Mobil</th>
-                      <th>Kategory</th>
+                      <th>Kategori</th>
                       <th>Harga</th>
                       <th>Fuel</th>
                       <th>Transmition</th>
                       <th>Seat</th>
                       <th>Gambar</th>
+                      <th>Created At</th>
+                      <th>Updated At</th>
                       <th style="width: 10px">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach ($car as $row)
                     <tr>
-                      <td>{{$row->id}}</td>
                       <td>{{$row->nama}}</td>
                       <td>{{$row->tipe_mobil}}</td>
                       <td>{{$row->harga}}</td>
                       <td>{{$row->fuel}}</td>
                       <td>{{$row->transmition}}</td>
                       <td>{{$row->seat}}</td>
-                      <td>{{$row->id}}</td>
+                      <td>{{$row->gambar}}</td>
+                      <td>{{$row->created_at}}</td>
+                      <td>{{$row->updated_at}}</td>
                       <td>
                         <div class="btn-aksi">
-                         <button type="submit" class="btn btn-info mb-1">edit</button>
-                         <button type="btn" class="btn btn-danger">delete</button>
+                         <a  href="{{ route('car.car.edit', $row->id) }}" ><button type="submit" class="btn btn-info mb-1">edit</button></a>
+                         <a  href="{{ route('car.car.delete', $row->id) }}" ><button type="btn" class="btn btn-danger">delete</button></a>
                         </div>
                       </td>
                     </tr>
