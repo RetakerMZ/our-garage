@@ -44,15 +44,19 @@ Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('landing');
 
     //Kategori Mobil
-    
+
     Route::get('/tipe/index', [CarTypeController::class, 'index'])->name('car.tipe.index');
     Route::get('/tipe/create', [CarTypeController::class, 'create'])->name('car.tipe.create');
     Route::post('/tipe/insert', [CarTypeController::class, 'insert'])->name('car.tipe.insert');
 
     //Mobil
-    Route::get('/car/create', [CarController::class, 'create'])->name('car.create');
-    Route::get('/car/index', [CarController::class, 'index'])->name('car.index');
-    Route::post('/car/insert', [CarController::class, 'insert'])->name('car.insert');
+    Route::get('/car/create', [CarController::class, 'create'])->name('car.car.create');
+    Route::get('/car/index', [CarController::class, 'index'])->name('car.car.index');
+    Route::post('/car/insert', [CarController::class, 'insert'])->name('car.car.insert');
+    Route::get('/car/{id}', [CarController::class, 'edit'])->name('car.car.edit');
+    Route::post('/car/update/{id}', [CarController::class, 'update'])->name('car.car.update');
+    Route::get('/car/delete/{id}', [CarController::class, 'delete'])->name('car.car.delete');
+
 
 });
 

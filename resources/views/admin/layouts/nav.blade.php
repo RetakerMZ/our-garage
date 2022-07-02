@@ -41,13 +41,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../car/index" class="nav-link">
+                <a  href="{{ route('car.car.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Mobil</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../tipe/index" class="nav-link">
+                <a  href="{{ route('car.tipe.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tipe Mobil</p>
                 </a>
@@ -64,7 +64,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="admin/layout/top-nav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Motor</p>
                 </a>
