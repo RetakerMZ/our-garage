@@ -17,6 +17,8 @@ class Car extends Model
         'transmition',
         'gambar',
 		'tipe_mobil',
+        'rent',
+        'keterangan',
 	];
 }
 
