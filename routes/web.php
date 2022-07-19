@@ -21,27 +21,20 @@ use App\Http\Controllers\CarTypeController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
-// Route::get('/car', function () {
-//     return view('car.car');
-// });
-// Route::get('/allcar', function () {
-//     return view('car.all_car');
-// });
-// Route::get('/detailcar', function () {
-//     return view('car.car_detail');
-// });
+
+
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
+Route::get('/', function () {
+    return view('landing');
+})->name('landing');
 Route::get('/car',[LandingOurGarage::class,'index'])->name('car');
 Route::get('/allcar',[AllCars::class,'index'])->name('allcar');
 Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
 
 Route::prefix('admin')->group(function() {
-    Route::get('/', [AdminController::class, 'landing'])->name('landing');
+    Route::get('/', [AdminController::class, 'landing'])->name('admin');
 
     //Kategori Mobil
 

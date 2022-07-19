@@ -97,6 +97,11 @@
                   </select>
                 </div>
                 <div class="form-group">
+                    <label for="exampleInputEmail1">Keterangan</label>
+                    <textarea name="keterangan" class="form-control" id="exampleInputEmail1" placeholder="Mobil" rows="3">
+                     {{ old('keterangan') }}</textarea>
+                  </div>
+                <div class="form-group">
                     <label for="exampleInputFile">Gambar Mobil</label>
                     <div class="input-group">
                       <div class="custom-file">

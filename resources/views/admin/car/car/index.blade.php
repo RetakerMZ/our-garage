@@ -31,7 +31,9 @@
                       <th>Fuel</th>
                       <th style="width: 10px">Transmition</th>
                       <th style="width: 10px">Seat</th>
+                      <th>Keterangan</th>
                       <th>Gambar</th>
+                      <th>Rent</th>
                       <th>Created At</th>
                       <th>Updated At</th>
                       <th style="width: 10px">Aksi</th>
@@ -46,7 +48,9 @@
                       <td>{{$row->fuel}}</td>
                       <td>{{$row->transmition}}</td>
                       <td>{{$row->seat}}</td>
+                      <td>{{$row->remt}}</td>
                       <td>{{$row->gambar}}</td>
+                      <td>{{$row->keterangan}}</td>
                       <td>{{$row->created_at}}</td>
                       <td>{{$row->updated_at}}</td>
                       <td>

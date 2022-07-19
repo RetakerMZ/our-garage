@@ -22,6 +22,8 @@ return new class extends Migration
             $table->enum('transmition',['manual','automatic']);
             $table->string('gambar');
             $table->string('tipe_mobil');
+            $table->enum('rent',['yes','no']);
+            $table->string('keterangan');
             $table->timestamps();
         });
     }
