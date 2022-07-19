@@ -56,7 +56,7 @@ class CarController extends Controller
         ]);
         if($store){
 
-            return redirect()->route('car.index');
+            return redirect()->route('car.car.index');
         }else{
 
             return redirect()->back();
