@@ -13,7 +13,7 @@
       @foreach ($allcars as $allcar)
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
-        <img src="{{asset('storage/images/cars/'.$allcar->image)}}" class="card-img-top" alt="...">
+        <img src="{{asset('storage/images/cars/'.$allcar->gambar)}}" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
           <h5 class="card-title">{{$allcar->nama}}</h5>
           <p class="card-text">{{$allcar->transmition}}</p>
