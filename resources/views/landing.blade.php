@@ -72,7 +72,7 @@
                                         <div class="d-flex mb-3">
                                             <!-- <span>Lorem ipsum dolor sit amet</span> -->
                                         </div>
-                                        <p class="d-flex mb-0 d-block"><a href="#" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
+                                        <p class="d-flex mb-0 d-block"><a href="{{ route('allcar') }}" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -197,6 +197,6 @@
           </div>
         </div>
       </div>
-    
+
 <!-- END TESTIMONI -->
         @endsection
