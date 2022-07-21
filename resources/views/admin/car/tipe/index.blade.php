@@ -40,10 +40,17 @@
                       <td>{{$row->created_at}}</td>
                       <td>{{$row->updated_at}}</td>
                       <td>
-                        <div class="btn-aksi">
-                            <a  href="{{ route('car.tipe.edit', $row->id) }}" ><button type="submit" class="btn btn-info mb-1">edit</button></a>
-                            <a  href="{{ route('car.tipe.delete', $row->id) }}" ><button type="btn" class="btn btn-danger">delete</button></a>
-                        </div>
+                        <<form action="{{ route('car.tipe.delete', $row->id) }}"
+                            method="GET"
+                            onsubmit="return confirm('Apakah anda yakin menghapus data ini?')">
+                            @csrf
+                            @method('delete')
+                            <a class="btn btn-sm btn-info"
+                                href="{{ route('car.tipe.edit', $row->id) }}"><i
+                                    class="far fa-edit"></i> Edit</a>
+                            <button type="submit" class="btn btn-sm btn-outline-danger"><i
+                                    class="far fa-trash-alt"></i> Hapus</button>
+                        </form>
                       </td>
                     </tr>
                     @endforeach

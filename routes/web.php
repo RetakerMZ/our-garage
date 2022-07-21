@@ -40,8 +40,8 @@ Route::prefix('admin')->group(function() {
 
     Route::get('/tipe/index', [CarTypeController::class, 'index'])->name('car.tipe.index');
     Route::get('/tipe/create', [CarTypeController::class, 'create'])->name('car.tipe.create');
-    Route::get('/tipe/{id}', [CarController::class, 'edit'])->name('car.tipe.edit');
-    Route::get('/tipe/delete/{id}', [CarController::class, 'delete'])->name('car.tipe.delete');
+    Route::get('/tipe/{id}', [CarTypeController::class, 'edit'])->name('car.tipe.edit');
+    Route::get('/tipe/delete/{id}', [CarTypeController::class, 'delete'])->name('car.tipe.delete');
     Route::post('/tipe/insert', [CarTypeController::class, 'insert'])->name('car.tipe.insert');
 
     //Mobil
