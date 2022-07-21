@@ -34,9 +34,8 @@
                       <th>Keterangan</th>
                       <th>Gambar</th>
                       <th>Rent</th>
-                      <th>Created At</th>
-                      <th>Updated At</th>
-                      <th style="width: 10px">Aksi</th>
+
+                      <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -51,8 +50,7 @@
                       <td>{{$row->keterangan}}</td>
                       <td>{{$row->gambar}}</td>
                       <td>{{$row->rent}}</td>
-                      <td>{{$row->created_at}}</td>
-                      <td>{{$row->updated_at}}</td>
+
                       <td>
                         <form action="{{ route('car.car.delete', $row->id) }}"
                             method="GET"
