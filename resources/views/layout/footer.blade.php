@@ -24,9 +24,9 @@
                 <h2 class="ftco-heading-2">Kontak</h2>
                 <ul class="list-unstyled">
                     <li><a href="#" class="py-2 d-block">Telepon</a></li>
-                    <li class="kontak__">0895394620229</li>
+                    <li class="kontak__">085829261962</li>
                     <li><a href="#" class="py-2 d-block">Whatsapp</a></li>
-                    <li class="kontak__">0895394620229</li>
+                    <li class="kontak__">085829261962</li>
                     <li><a href="#" class="py-2 d-block">Email</a></li>
                     <li class="kontak__">Ourgarage@gmail.com</li>
                 </ul>

@@ -117,6 +117,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                {{-- <i class="fas fa-steak"></i> --}}
+              <p>
+                TESTIMONIAL
+                
+              </p>
+            </a>
 
       </nav>
       <!-- /.sidebar-menu -->
