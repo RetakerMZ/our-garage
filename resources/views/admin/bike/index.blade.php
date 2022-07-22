@@ -18,35 +18,45 @@
           <div class="col">
             <div class="card">
               <div class="card-header">
-                <a  href="{{ route('car.tipe.create') }}"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
+                <a  href="{{ route('admin.bike.create') }}"><button type="submit" class="btn btn-primary">Tambah Data +</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
-                      <th>Tipe_mobil</th>
+                      <th>Nama Motor</th>
+                      <th>Kategori</th>
+                      <th>Harga</th>
+                      <th>Fuel</th>
+                      <th style="width: 10px">Transmition</th>
+                      <th>Keterangan</th>
                       <th>Gambar</th>
-                      <th>Created At</th>
-                      <th>Updated At</th>
-                      <th style="width: 10px">Aksi</th>
+                      <th>Rent</th>
+
+                      <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($car_type as $row)
+                    @foreach ($car as $row)
                     <tr>
-                      <td>{{$row->tipe_mobil}}</td>
+                      <td>{{$row->name}}</td>
+                      <td>{{$row->tipe_motor}}</td>
+                      <td>{{$row->harga}}</td>
+                      <td>{{$row->fuel}}</td>
+                      <td>{{$row->transmition}}</td>
+                      <td>{{$row->keterangan}}</td>
                       <td>{{$row->gambar}}</td>
-                      <td>{{$row->created_at}}</td>
-                      <td>{{$row->updated_at}}</td>
+                      <td>{{$row->rent}}</td>
+
                       <td>
-                        <<form action="{{ route('car.tipe.delete', $row->id) }}"
+                        <form action="{{ route('admin.bike.delete', $row->id) }}"
                             method="GET"
                             onsubmit="return confirm('Apakah anda yakin menghapus data ini?')">
                             @csrf
                             @method('delete')
                             <a class="btn btn-sm btn-info"
-                                href="{{ route('car.tipe.edit', $row->id) }}"><i
+                                href="{{ route('admin.bike.edit', $row->id) }}"><i
                                     class="far fa-edit"></i> Edit</a>
                             <button type="submit" class="btn btn-sm btn-outline-danger"><i
                                     class="far fa-trash-alt"></i> Hapus</button>
