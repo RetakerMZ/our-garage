@@ -14,30 +14,13 @@
   @stack('css')
   
 </head>
-<body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
+<body class="hold-transition sidebar-mini layout-fixed">
 
   @include('admin.layouts.nav')
 
-    <!-- Right navbar links -->
 
   @yield('content')
-        <!-- /.card-footer-->
-      </div>
-      <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+</body>
 
 <!-- jQuery -->
 <script src="/assets/plugins/jquery/jquery.min.js"></script>
