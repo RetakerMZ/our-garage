@@ -23,11 +23,11 @@
           <div class="col-lg-2 col-md-4 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
-                <img src="images/tipe.png" alt="">
+                <img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt="">
                 <p>{{$tipe->tipe_mobil}}</p>
               </div>
             </div>
-           
+
           </div>
           @endforeach
     </div>
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="row ftco-animate">
-    
+
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
         <img src="images/agya.jpg" class="card-img-top" alt="...">
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
       <a href="{{ route('allcar') }}"> <button type="button" class="btn btn-outline-primary">See More</button></a>
     </div>
@@ -116,7 +116,7 @@
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-8"></i>_Jika anda mengirim melalui Bank BCA, cukup info kepada kami via SMS, email, telephone, kami akan check di internet.<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-9"></i>_Kami melayani dengan free antar jemput dibandara dengan catatan biaya karcis parkir bandara ditanggung Penyewa. Adapun batas jam kerja pukul 22.00 jika lewat akan ada biaya lembur karyawan Rp. 50.000<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i>_Kami berhak menolak atau tidak memberikan izin untuk penyewaan mobil/kamera di tempat kami dengan pertimbangan atau alasan tertentu seperti data pribadi penyewa tidak lengkap, dll.<p>
-                       
+
                     </div>
                     </div>
                 </div>
