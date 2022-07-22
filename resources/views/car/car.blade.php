@@ -45,22 +45,46 @@
       </div>
     </div>
     <div class="row ftco-animate">
-    @foreach ($car as $c)
+    
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
-        <img src="images/car-1.jpg" class="card-img-top" alt="...">
+        <img src="images/agya.jpg" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
-          <h5 class="card-title">{{$c->nama}}</h5>
-          <p class="card-text"><span>{{$c->harga}}k</span> / day</p>
+          <h5 class="card-title">Toyota Agya</h5>
+          <p class="card-text"><span>250 k</span> / day</p>
           <a href="#" class="btn btncar1">Details </a>
           <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
           <hr>
           </div>
         </div>
       </div>
-      @endforeach
+      <div class="col-lg-4 col-6 align-item-center text-center">
+        <div class="card ourcar__">
+        <img src="images/jazz.jpg" class="card-img-top" alt="...">
+          <div class="card-body ourcar-body">
+          <h5 class="card-title">Honda Jazz</h5>
+          <p class="card-text"><span>400 k</span> / day</p>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
+          <hr>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 align-item-center text-center">
+        <div class="card ourcar__">
+        <img src="images/hrv.jpg" class="card-img-top" alt="...">
+          <div class="card-body ourcar-body">
+          <h5 class="card-title">Honda Hrv Prestige</h5>
+          <p class="card-text"><span>600 k</span> / day</p>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
+          <hr>
+          </div>
+        </div>
+      </div>
+      
       <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
-      <button type="button" class="btn btn-outline-primary">See More</button>
+      <a href="{{ route('allcar') }}"> <button type="button" class="btn btn-outline-primary">See More</button></a>
     </div>
     </div>
   </div>

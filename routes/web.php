@@ -21,7 +21,12 @@ use App\Http\Controllers\CarTypeController;
 |
 */
 
-
+Route::get('/bike', function () {
+    return view('bike.bike');
+});
+Route::get('/detail_bike', function () {
+    return view('bike.bike_detail');
+});
 
 Route::get('/carousel', function () {
     return view('layout.carousel');

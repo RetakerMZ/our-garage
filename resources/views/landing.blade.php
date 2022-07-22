@@ -134,36 +134,36 @@
                     <div class="row">
                         <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+                                <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa-solid fa-sack-dollar"></i></span></div>
                                     <div class="text w-100">
-                                    <h3 class="heading mb-2">Lorem</h3>
+                                    <h3 class="heading mb-2">Harga Bersahabat</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
-                                <div class="icon"><span class=""></span></div>
+                            <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa fa-motorcycle" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
-                                    <h3 class="heading mb-2">Lorem</h3>
+                                    <h3 class="heading mb-2">Antar Jemput</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
+                                <div class="icon d-flex align-items-center justify-content-center"><span ><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
-                                    <h3 class="heading mb-2">Lorem</h3>
+                                    <h3 class="heading mb-2">Layanan 24 jam</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 ">
                             <div class="services services-2 w-100 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class=""></span></div>
+                                <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
-                                    <h3 class="heading mb-2">Lorem</h3>
+                                    <h3 class="heading mb-2">Terpercaya</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
                                 </div>
                             </div>
