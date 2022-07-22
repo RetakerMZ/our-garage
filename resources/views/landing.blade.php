@@ -16,36 +16,36 @@
     <div class="carousel-item active">
       <img src="images/bg_3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
-        <h5 class="capt__">RENT <span>ANYTHING</span> YOU <span>WANT</span></h5>
-        <p class="capt__2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequatur aliquam atque delectus doloremque eum.</p>
+        <h5 class="capt__">BEST <span>RENTAL</span> SERVICE <span>IN INDONESIA</span></h5>
+        <p class="capt__2">One Stop Service For Amazing Holiday</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/bg_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>MOBIL</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <p>We Provide Car Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/bg_1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>Motor</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <p>We Provide Motorcycle Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/bg_2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>Kamera</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <p>We Provide Camera Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/bbq.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>BBQ PACKAGE</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <p>We Provide Tools Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
                                         <div class="d-flex mb-3">
                                             <!-- <span>Lorem ipsum dolor sit amet</span> -->
                                         </div>
-                                        <p class="d-flex mb-0 d-block"><a href="{{ route('allcar') }}" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
+                                        <p class="d-flex mb-0 d-block"><a href="{{ route('car') }}" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa-solid fa-sack-dollar"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Harga Bersahabat</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
+                                    <p>Kami menawarkan harga rental mobil yang kompetitif, dengan kondisi kendaraan yang terawat dan pelayanan yang memuaskan.</p>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                             <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa fa-motorcycle" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Antar Jemput</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
+                                    <p>Kami menyediakan pelayanan antar jemput sesuai dengan lokasi anda dan yang pasti bebas biaya.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span ><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Layanan 24 jam</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
+                                    <p>Kami .</p>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Terpercaya</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat veritatis ab vitae doloribus itaque libero facere illo cum aspernatur.</p>
+                                    <p>Kami .</p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                   <div class="text pt-4">
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt placeat! Quisquam aperiam at perspiciatis.</p>
                     <p class="name">NUR REIKI</p>
-                    <span class="position">MANAGER</span>
+                    <!-- <span class="position">MANAGER</span> -->
                   </div>
                 </div>
               </div>

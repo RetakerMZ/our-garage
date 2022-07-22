@@ -2,7 +2,7 @@
         <div class="container" id="contact">
             <div class="row mt-5">
             <div class="col-md-3 col-sm-6 text-center pb-5">
-                <img src="images/logoo.png" style="width:250px; margin-top:-50px;"></img>
+                <img src="images/logoo.png" style="width:250px; margin-top:-50px; filter: grayscale(100%);"></img>
                 <div class="copyright text-center my-auto">
                     <span style="font-size:0.7em;" class="text-break">&copy;2022 OURGARAGE.ID</span>
                 </div>
@@ -24,9 +24,9 @@
                 <h2 class="ftco-heading-2">Kontak</h2>
                 <ul class="list-unstyled">
                     <li><a href="#" class="py-2 d-block">Telepon</a></li>
-                    <li class="kontak__">0895394620229</li>
+                    <li class="kontak__">085829261962</li>
                     <li><a href="#" class="py-2 d-block">Whatsapp</a></li>
-                    <li class="kontak__">0895394620229</li>
+                    <li class="kontak__">085829261962</li>
                     <li><a href="#" class="py-2 d-block">Email</a></li>
                     <li class="kontak__">Ourgarage@gmail.com</li>
                 </ul>

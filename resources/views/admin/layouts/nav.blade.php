@@ -7,7 +7,7 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar h-100">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <!-- <div class="image">
@@ -117,6 +117,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                {{-- <i class="fas fa-steak"></i> --}}
+              <p>
+                TESTIMONIAL
+                
+              </p>
+            </a>
 
       </nav>
       <!-- /.sidebar-menu -->
