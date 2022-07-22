@@ -4,10 +4,12 @@ use App\Http\Controllers\AllCars;
 use App\Http\Controllers\DetailCars;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\BikeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LandingOurGarage;
 use App\Http\Controllers\AllCarsController;
 use App\Http\Controllers\CarTypeController;
+
 
 
 /*
@@ -42,7 +44,6 @@ Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('admin');
 
     //Kategori Mobil
-
     Route::get('/tipe/index', [CarTypeController::class, 'index'])->name('car.tipe.index');
     Route::get('/tipe/create', [CarTypeController::class, 'create'])->name('car.tipe.create');
     Route::get('/tipe/{id}', [CarTypeController::class, 'edit'])->name('car.tipe.edit');
@@ -57,6 +58,19 @@ Route::prefix('admin')->group(function() {
     Route::post('/car/update/{id}', [CarController::class, 'update'])->name('car.car.update');
     Route::get('/car/delete/{id}', [CarController::class, 'delete'])->name('car.car.delete');
 
+    //Motor
+    Route::get('/bike/create', [BikeController::class, 'create'])->name('admin.bike.create');
+    Route::get('/bike/index', [BikeController::class, 'index'])->name('admin.bike.index');
+    Route::post('/bike/insert', [BikeController::class, 'insert'])->name('admin.bike.insert');
+    Route::get('/bike/{id}', [BikeController::class, 'edit'])->name('admin.bike.edit');
+    Route::post('/bike/update/{id}', [BikeController::class, 'update'])->name('admin.bike.update');
+    Route::get('/bike/delete/{id}', [BikeController::class, 'delete'])->name('admin.bike.delete');
 
+    //Kategori Motor
+    Route::get('/bike_type/index', [BikeController::class, 'index'])->name('admin.bike_type.index');
+    Route::get('/bike_type/create', [BikeController::class, 'create'])->name('admin.bike_type.create');
+    Route::get('/bike_type/{id}', [BikeController::class, 'edit'])->name('admin.bike_type.edit');
+    Route::get('/bike_type/delete/{id}', [BikeController::class, 'delete'])->name('admin.bike_type.delete');
+    Route::post('/bike_type/insert', [BikeController::class, 'insert'])->name('admin.bike_type.insert');
 });
 
