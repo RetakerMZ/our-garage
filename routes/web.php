@@ -77,6 +77,6 @@ Route::prefix('admin')->group(function() {
     Route::get('/bike_type/delete/{id}', [BikeController::class, 'delete'])->name('admin.bike_type.delete');
     Route::post('/bike_type/insert', [BikeController::class, 'insert'])->name('admin.bike_type.insert');
     //testimoni
- Route::resource('testimoni', TestimoniController::class);
+    Route::resource('testimoni', TestimoniController::class);
 });
 
