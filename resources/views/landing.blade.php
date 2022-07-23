@@ -155,7 +155,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span ><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Layanan 24 jam</h3>
-                                    <p>Kami .</p>
+                                    <p>Kami selalu siap memberikan pelayanan yang cepat dan informasi yang tepat kapanpun.</p>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></div>
                                     <div class="text w-100">
                                     <h3 class="heading mb-2">Terpercaya</h3>
-                                    <p>Kami .</p>
+                                    <p>Menjaga keamanan dan kenyamanan adalah prioritas kami</p>
                                 </div>
                             </div>
                         </div>

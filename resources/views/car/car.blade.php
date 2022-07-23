@@ -6,7 +6,7 @@
 <div class="jumbotron jumbotron-fluid jumbot__" style="background-image: url('images/bg_1.jpg');">
   <div class="container">
     <h1 class="display-4"><span>SEWA </span>MOBIL <span>BALI </span></h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p class="lead">We Provide Car Rental With Affordable Price And Complete Service</p>
   </div>
 </div>
 <!-- End Jumbotron -->

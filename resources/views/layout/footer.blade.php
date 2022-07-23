@@ -2,7 +2,7 @@
         <div class="container" id="contact">
             <div class="row mt-5">
             <div class="col-md-3 col-sm-6 text-center pb-5">
-                <img src="images/logoo.png" style="width:250px; margin-top:-50px; filter: grayscale(100%);"></img>
+                <img src="images/logo__.png" style="width:250px; margin-top:-50px;"></img>
                 <div class="copyright text-center my-auto">
                     <span style="font-size:0.7em;" class="text-break">&copy;2022 OURGARAGE.ID</span>
                 </div>
