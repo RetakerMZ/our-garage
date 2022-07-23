@@ -78,5 +78,6 @@ Route::prefix('admin')->group(function() {
     Route::post('/bike_type/insert', [BikeController::class, 'insert'])->name('admin.bike_type.insert');
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
+    Route::post('/testimoni/insert', [TestimoniController::class, 'insert'])->name('testimoni.insert');
 });
 

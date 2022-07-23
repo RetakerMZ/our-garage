@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Testimoni;
-use Brian2694\Toastr\Facades\Toastr;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -30,7 +29,7 @@ class TestimoniController extends Controller
             'caption' => 'nullable|string',
         ]);
 
-        $fileName = date("Y-m-d-His") . '_' . $request->file('image')->getClientOriginalName();
+        $fileName = date("Y-m-d-His") . '_' . $request->file('gambar')->getClientOriginalName();
 
         $image = $request->file('image')
             ->storeAs('public/images/testimonis/', $fileName);
