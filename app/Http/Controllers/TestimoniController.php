@@ -31,7 +31,7 @@ class TestimoniController extends Controller
 
         $fileName = date("Y-m-d-His") . '_' . $request->file('gambar')->getClientOriginalName();
 
-        $image = $request->file('image')
+        $image = $request->file('gambar')
             ->storeAs('public/images/testimonis/', $fileName);
 
         $store = testimoni::insert([
@@ -68,17 +68,17 @@ class TestimoniController extends Controller
             'gambar' => 'required|file|image',
             'caption' => 'nullable|string',
         ]);
-        if ($request->hasFile('image')) {
-            $existingImage = Testimoni::find($id)->image;
+        if ($request->hasFile('gambar')) {
+            $existingImage = Testimoni::find($id)->gambar;
             Storage::delete('public/images/testimonis/' . $existingImage);
 
 
             $fileName = date("Y-m-d-His") . '_' . $request->file('image')->getClientOriginalName();
-            $image = $request->file('image')
+            $image = $request->file('gambar')
                 ->storeAs('public/images/testimonis/', $fileName);
 
             $image = Testimoni::find($id)->update([
-                'image' => $fileName,
+                'gambar' => $fileName,
             ]);
         }
         $testimoni = Testimoni::find($id);
@@ -89,10 +89,10 @@ class TestimoniController extends Controller
             'updated_at' => Carbon::now(),
         ]);
         if($update){
-            Toastr::success('Data berhasil diedit','Berhasil!');
+            //Toastr::success('Data berhasil diedit','Berhasil!');
             return redirect()->route('testimoni.index');
         }else{
-            Toastr::error('Data gagal diedit, coba lagi','Gagal!');
+            //Toastr::error('Data gagal diedit, coba lagi','Gagal!');
             return redirect()->back();
         }
 
@@ -100,14 +100,14 @@ class TestimoniController extends Controller
     public function destroy($id)
     {
         $testimoni = Testimoni::find($id);
-        $existingImage = Testimoni::find($id)->image;
+        $existingImage = Testimoni::find($id)->gambar;
         Storage::delete('public/images/testimonis/' . $existingImage);
         $delete = $testimoni->delete();
         if($delete){
-            Toastr::success('Testimoni berhasil dihapus','Berhasil!');
+            //Toastr::success('Testimoni berhasil dihapus','Berhasil!');
             return redirect()->route('testimoni.index');
         }else{
-            Toastr::error('Testimoni gagal dihapus, coba lagi','Gagal!');
+            //Toastr::error('Testimoni gagal dihapus, coba lagi','Gagal!');
             return redirect()->back();
         }
     }
