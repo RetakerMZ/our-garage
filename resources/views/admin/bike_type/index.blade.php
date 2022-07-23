@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Mobil</h1>
+            <h1>Data Motor</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -33,7 +33,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($car_type as $row)
+                    @foreach ($bike_type as $row)
                     <tr>
                       <td>{{$row->tipe_motor}}</td>
                       <td>{{$row->gambar}}</td>
