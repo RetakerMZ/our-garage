@@ -34,10 +34,10 @@ class TestimoniController extends Controller
         $image = $request->file('gambar')
             ->storeAs('public/images/testimonis/', $fileName);
 
-        $store = testimoni::insert([
-            'nama' => 'required|string',
-            'gambar' => 'required|file|image',
-            'caption' => 'nullable|string',
+        $store = Testimoni::insert([
+            'nama' => $request->nama,
+            'gambar' => $request->gambar,
+            'caption' => $request->caption,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
