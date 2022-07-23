@@ -43,10 +43,10 @@ class TestimoniController extends Controller
             'updated_at' => Carbon::now(),
         ]);
         if($store){
-            Toastr::success('Data berhasil ditambahkan','Berhasil!');
+            //Toastr::success('Data berhasil ditambahkan','Berhasil!');
             return redirect()->route('testimoni.index');
         }else{
-            Toastr::error('Data gagal ditambahkan, coba lagi','Gagal!');
+            //Toastr::error('Data gagal ditambahkan, coba lagi','Gagal!');
             return redirect()->back();
         }
 

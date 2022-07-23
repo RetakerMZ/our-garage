@@ -44,19 +44,19 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-          <form action="{{ route('testimoni.store') }}" method="POST" enctype="multipart/form-data">
+          <form action="{{ route('testimoni.insert') }}" method="POST" enctype="multipart/form-data">
                 @csrf
             <div class="row">
               <div class="col-md-6">
               <div class="form-group col-md-6">
                             <label for="name">Nama</label>
-                            <input type="text" class="form-control" name="komen" id="komen"
-                                placeholder="Masukkan Nama" value="{{old('komen') }}">
+                            <input type="text" class="form-control" name="nama" id="nama"
+                                placeholder="Masukkan Nama" value="{{old('nama') }}">
                         </div>
                   <div class="form-group col-md-6">
                             <label for="name">Caption</label>
-                            <input type="text" class="form-control" name="komen" id="komen"
-                                placeholder="Masukkan Caption" value="{{old('komen') }}">
+                            <input type="text" class="form-control" name="caption" id="caption"
+                                placeholder="Masukkan Caption" value="{{old('caption') }}">
                         </div>
               <!-- /.col -->
               <div class="col-md-6">
