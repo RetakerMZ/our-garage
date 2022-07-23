@@ -9,6 +9,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LandingOurGarage;
 use App\Http\Controllers\AllCarsController;
 use App\Http\Controllers\CarTypeController;
+use App\Http\Controllers\TestimoniController;
 
 
 
@@ -23,8 +24,11 @@ use App\Http\Controllers\CarTypeController;
 |
 */
 
-Route::get('/bike', function () {
-    return view('bike.bike');
+Route::get('/testi', function () {
+    return view('admin.testimoni.index');
+});
+Route::get('/testic', function () {
+    return view('admin.testimoni.create');
 });
 Route::get('/detail_bike', function () {
     return view('bike.bike_detail');
@@ -72,5 +76,7 @@ Route::prefix('admin')->group(function() {
     Route::get('/bike_type/{id}', [BikeController::class, 'edit'])->name('admin.bike_type.edit');
     Route::get('/bike_type/delete/{id}', [BikeController::class, 'delete'])->name('admin.bike_type.delete');
     Route::post('/bike_type/insert', [BikeController::class, 'insert'])->name('admin.bike_type.insert');
+    //testimoni
+ Route::resource('testimoni', TestimoniController::class);
 });
 

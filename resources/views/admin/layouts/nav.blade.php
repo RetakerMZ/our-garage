@@ -55,7 +55,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
                 {{-- <i class="fas fa-motorcycle"></i> --}}
               <p>
                 MOTOR
@@ -118,7 +118,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('testimoni.index') }}" class="nav-link">
                 {{-- <i class="fas fa-steak"></i> --}}
               <p>
                 TESTIMONIAL
