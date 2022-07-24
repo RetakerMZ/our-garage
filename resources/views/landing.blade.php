@@ -182,21 +182,19 @@
         
           
             <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
               @foreach($testimonis as $testi)
+              <div class="item">
                 <div class="testimony-wrap rounded text-center py-4 pb-5">
                   <div class="user-img mb-2" style="background-image: url(images/profil.png)">
                   </div>
                   <div class="text pt-4">
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt placeat! Quisquam aperiam at perspiciatis.</p>
+                    <p class="mb-4">{{$testi->caption}}</p>
                     <p class="name">{{ $testi->nama }}</p>
                     <!-- <span class="position">MANAGER</span> -->
-                  </div>
-                  @endforeach
+                  </div> 
                 </div>
-                
               </div>
-              
+              @endforeach
             </div>
          
       </div>
