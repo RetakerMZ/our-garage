@@ -45,7 +45,7 @@ Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
 Route::get('/login',function(){
     return view('admin.auth.login');
 })->name('login');
-Route::post('/login',[LoginController::class,'authenthicate'])->name('authenticate');
+Route::post('/login',[LoginController::class,'authenticate'])->name('authenticate');
 
 Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('admin');
