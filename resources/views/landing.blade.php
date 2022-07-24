@@ -28,21 +28,21 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/bg_1.jpg" class="d-block w-100" alt="...">
+      <img src="images/motor1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>Motor</h5>
         <p>We Provide Motorcycle Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/bg_2.jpg" class="d-block w-100" alt="...">
+      <img src="images/camera1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>Kamera</h5>
         <p>We Provide Camera Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/bbq.jpg" class="d-block w-100" alt="...">
+      <img src="images/bbq1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>BBQ PACKAGE</h5>
         <p>We Provide Tools Rental With Affordable Price And Complete Service</p>
