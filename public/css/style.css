@@ -12806,8 +12806,7 @@ textarea.form-control {
 }
 .categoryimg img{
     /* border: none; */
-    height: 100%;
-    width: 100%;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -12834,7 +12833,7 @@ textarea.form-control {
 @media (min-width: 768px) { 
     .categoryimg img{
         /* border: none; */
-        padding: 10px;
+        
         width: 15em;
         height: 8em;
         display: block;
@@ -12844,13 +12843,14 @@ textarea.form-control {
     }  
     .car__{
         display: block;
-        margin-left: -30px;
+        margin-left: auto;
         margin-right: auto;
     }
     .category-car p{
         font-weight: 500;
         font-size: 15px;
-        text-align: end;
+        text-align: center;
+        margin-left: 15px;
     }
     .title h2{
         font-size:40px;

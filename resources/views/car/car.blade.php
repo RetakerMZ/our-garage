@@ -6,7 +6,7 @@
 <div class="jumbotron jumbotron-fluid jumbot__" style="background-image: url('images/bg_1.jpg');">
   <div class="container">
     <h1 class="display-4"><span>SEWA </span>MOBIL <span>BALI </span></h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p class="lead">We Provide Car Rental With Affordable Price And Complete Service</p>
   </div>
 </div>
 <!-- End Jumbotron -->
@@ -23,11 +23,11 @@
           <div class="col-lg-2 col-md-4 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
-                <img src="images/tipe.png" alt="">
+                <img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt="">
                 <p>{{$tipe->tipe_mobil}}</p>
               </div>
             </div>
-           
+
           </div>
           @endforeach
     </div>
@@ -37,7 +37,7 @@
 <!-- END CAR TYPE -->
 
 <!-- OUR CAR -->
-<div class="container-fluid bg-light py-3">
+<div class="container-fluid bg-light py-5">
   <div class="container pb-5">
     <div class="row pt-3">
       <div class="col align-item-center text-center heading-section ftco-animate title">
@@ -45,24 +45,49 @@
       </div>
     </div>
     <div class="row ftco-animate">
-      @foreach ($car as $c)
+
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
-        <img src="images/car-1.jpg" class="card-img-top" alt="...">
+        <img src="images/agya.jpg" class="card-img-top" alt="...">
           <div class="card-body ourcar-body">
-          <h5 class="card-title">{{$c->nama}}</h5>
-          <p class="card-text"><span>{{$c->harga}}k</span> / day</p>
+          <h5 class="card-title">Toyota Agya</h5>
+          <p class="card-text"><span>250 k</span> / day</p>
           <a href="#" class="btn btncar1">Details </a>
           <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
           <hr>
           </div>
         </div>
       </div>
-      @endforeach
+      <div class="col-lg-4 col-6 align-item-center text-center">
+        <div class="card ourcar__">
+        <img src="images/jazz.jpg" class="card-img-top" alt="...">
+          <div class="card-body ourcar-body">
+          <h5 class="card-title">Honda Jazz</h5>
+          <p class="card-text"><span>400 k</span> / day</p>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
+          <hr>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 align-item-center text-center">
+        <div class="card ourcar__">
+        <img src="images/hrv.jpg" class="card-img-top" alt="...">
+          <div class="card-body ourcar-body">
+          <h5 class="card-title">Honda Hrv Prestige</h5>
+          <p class="card-text"><span>600 k</span> / day</p>
+          <a href="#" class="btn btncar1">Details </a>
+          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
+          <hr>
+          </div>
+        </div>
+      </div>
+
       <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
-      <button type="button" class="btn btn-outline-primary">See More</button>
+      <a href="{{ route('allcar') }}"> <button type="button" class="btn btn-outline-primary">See More</button></a>
     </div>
     </div>
+  </div>
   </div>
 </div>
 <!-- END OUR CAR -->
@@ -91,23 +116,7 @@
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-8"></i>_Jika anda mengirim melalui Bank BCA, cukup info kepada kami via SMS, email, telephone, kami akan check di internet.<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-9"></i>_Kami melayani dengan free antar jemput dibandara dengan catatan biaya karcis parkir bandara ditanggung Penyewa. Adapun batas jam kerja pukul 22.00 jika lewat akan ada biaya lembur karyawan Rp. 50.000<p>
                         <p class="mb-5 terms1__ "><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i>_Kami berhak menolak atau tidak memberikan izin untuk penyewaan mobil/kamera di tempat kami dengan pertimbangan atau alasan tertentu seperti data pribadi penyewa tidak lengkap, dll.<p>
-                        <p class="mb-5 terms2__ ">Untuk booking silahkan Penyewa memberikan data KTP, SIM A, Tiket PP, Hotel di Bali (bisa difoto) terlebih dahulu,
-                        Serta mengisi data dibawah ini dengan lengkap.</p>
-                        <p class=" terms3__">
-                        <br>Nama Penyewa :
-                        <br>Alamat/Penginapan :
-                        <br>Unit sewa :
-                        <br>Tgl dan jam sewa :
-                        <br>Tgl dan jam kembali :
-                        <br>Tempat antar :
-                        <br>Tempat ambil :
-                        <br>Lama Sewa :
-                        <br>Sosial media penyewa :
-                        <br>No hp :
-                        <br>*lampirkan foto: - KTP - SIM A - Ticket PP - Booking details Hotel
-                        </p>
 
-                        
                     </div>
                     </div>
                 </div>

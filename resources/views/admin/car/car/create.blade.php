@@ -54,7 +54,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Harga</label>
-                    <input type="number" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000">
+                    <input type="text" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000">
                   </div>
                 <div class="form-group">
                   <label>Bahan Bakar</label>
@@ -75,7 +75,9 @@
                   <option selected>Choose seat</option>
                     <option value="2">2</option>
                     <option value="4">4</option>
+                    <option value="5">5</option>
                     <option value="6">6</option>
+                    <option value="7">7</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -95,6 +97,11 @@
                     <option value="automatic">automatic</option>
                   </select>
                 </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Keterangan</label>
+                    <textarea name="keterangan" class="form-control" id="exampleInputEmail1" placeholder="Mobil" rows="3">
+                     {{ old('keterangan') }}</textarea>
+                  </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Gambar Mobil</label>
                     <div class="input-group">

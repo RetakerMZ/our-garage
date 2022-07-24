@@ -10701,6 +10701,7 @@ body,
 
 .layout-boxed .wrapper .main-sidebar {
   left: inherit;
+  height: 100%;
 }
 
 @supports not (-webkit-touch-callout: none) {
@@ -14990,6 +14991,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   visibility: hidden;
   display: inline-block;
   width: 0;
+  height: 100%;
 }
 
 .sidebar-collapse.sidebar-mini .sidebar-no-expand.main-sidebar.sidebar-focused .sidebar .nav-sidebar > .nav-item .nav-icon,

@@ -14,6 +14,7 @@ class CarController extends Controller
     public function index()
     {
         $car = Car::all();
+        // $car = Car::paginate(5);
         return view('admin.car.car.index',compact('car'));
     }
 
@@ -31,6 +32,7 @@ class CarController extends Controller
             'seat'=> 'required|string',
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
+            'keterangan' => 'nullable|string',
             'gambar' => 'required|file|image',
         ]);
 
@@ -46,13 +48,15 @@ class CarController extends Controller
             'fuel' => $request->fuel,
             'seat' => $request->seat,
             'transmition' => $request->transmition,
+            'rent' => 'no',
+            'keterangan' => $request->keterangan,
             'gambar' => $fileName,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
         if($store){
 
-            return redirect()->route('car.index');
+            return redirect()->route('car.car.index');
         }else{
 
             return redirect()->back();
@@ -76,6 +80,8 @@ class CarController extends Controller
             'seat'=> 'required|string',
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
+            'rent' => 'required|string',
+            'keterangan' => 'required|string',
             'gambar' => 'required|file|image',
         ]);
         if ($request->hasFile('gambar')) {
@@ -99,6 +105,8 @@ class CarController extends Controller
             'seat'=> $request->seat,
             'harga'=> $request->harga,
             'transmition' => $request->transmition,
+            'rent' => $request->rent,
+            'keterangan' => $request->keterangan,
             'updated_at' => Carbon::now(),
         ]);
         if($update){

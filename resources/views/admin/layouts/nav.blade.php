@@ -1,5 +1,5 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar h-100 sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link">
       <img src="/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -7,16 +7,16 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar h-100">
       <!-- Sidebar user (optional) -->
-      {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex fixed-top">
-        <div class="image">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <!-- <div class="image">
           <img src="/assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">OUR GARAGE</a>
-        </div>
-      </div> --}}
+        </div> -->
+      </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -55,7 +55,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
                 {{-- <i class="fas fa-motorcycle"></i> --}}
               <p>
                 MOTOR
@@ -64,13 +64,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="admin/layout/top-nav.html" class="nav-link">
+                <a href="{{ route('admin.bike.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Motor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="{{ route('admin.bike_type.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
@@ -117,6 +117,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="{{ route('testimoni.index') }}" class="nav-link">
+                {{-- <i class="fas fa-steak"></i> --}}
+              <p>
+                TESTIMONIAL
+
+              </p>
+            </a>
 
       </nav>
       <!-- /.sidebar-menu -->

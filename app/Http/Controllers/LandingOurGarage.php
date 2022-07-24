@@ -15,7 +15,7 @@ class LandingOurGarage extends Controller
      */
     public function index()
     {
-        $car = Car::all();
+        $car = Car::paginate(3);
         $types = CarType::all();
         return view('car.car',compact('types','car'));
     }
