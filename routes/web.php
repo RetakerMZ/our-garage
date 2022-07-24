@@ -25,11 +25,9 @@ use App\Http\Controllers\LandingController;
 |
 */
 
-Route::get('/testi', function () {
-    return view('admin.testimoni.index');
-});
-Route::get('/testic', function () {
-    return view('admin.testimoni.create');
+
+Route::get('/login', function () {
+    return view('admin.auth.login');
 });
 Route::get('/detail_bike', function () {
     return view('bike.bike_detail');
