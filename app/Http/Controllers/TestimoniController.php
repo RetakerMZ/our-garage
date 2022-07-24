@@ -36,7 +36,7 @@ class TestimoniController extends Controller
 
         $store = Testimoni::insert([
             'nama' => $request->nama,
-            'gambar' => $filename,
+            'gambar' => $fileName,
             'caption' => $request->caption,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
