@@ -11,8 +11,8 @@ use App\Http\Controllers\AllCarsController;
 use App\Http\Controllers\CarTypeController;
 use App\Http\Controllers\TestimoniController;
 use App\Http\Controllers\LandingController;
-
-
+use App\Http\Controllers\LoginController;
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +41,13 @@ Route::get('/car',[LandingOurGarage::class,'index'])->name('car');
 Route::get('/allcar',[AllCars::class,'index'])->name('allcar');
 Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
 
-Route::prefix('admin')->group(function() {
+//Login
+Route::get('/login',function(){
+    return view('admin.auth.login');
+});
+Route::post('/login',[LoginController::class,'authenthicate'])->name('authenticate');
+
+Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('admin');
 
     //Kategori Mobil
@@ -76,5 +82,7 @@ Route::prefix('admin')->group(function() {
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
     Route::post('/testimoni/insert', [TestimoniController::class, 'insert'])->name('testimoni.insert');
+
+
 });
 

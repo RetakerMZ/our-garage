@@ -16,7 +16,7 @@
         <div class="info">
           <a href="#" class="d-block">OUR GARAGE</a>
         </div> -->
-      </div> 
+      </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -30,7 +30,7 @@
                 DASHBOARD
               </p>
             </a>
-          
+
           <li class="nav-item">
             <a href="#" class="nav-link">
                 {{-- <i class="fas fa-car"></i> --}}
@@ -64,13 +64,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="admin/layout/top-nav.html" class="nav-link">
+                <a href="{{ route('admin.bike.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Motor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="{{ route('admin.bike_type.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
@@ -122,7 +122,7 @@
                 {{-- <i class="fas fa-steak"></i> --}}
               <p>
                 TESTIMONIAL
-                
+
               </p>
             </a>
 
