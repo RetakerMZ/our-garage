@@ -179,23 +179,26 @@
         <h2 class="py-3">TESTIMONIAL'S</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
+        
+          
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
+              @foreach($testimonis as $testi)
                 <div class="testimony-wrap rounded text-center py-4 pb-5">
                   <div class="user-img mb-2" style="background-image: url(images/profil.png)">
                   </div>
                   <div class="text pt-4">
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt placeat! Quisquam aperiam at perspiciatis.</p>
-                    <p class="name">NUR REIKI</p>
+                    <p class="name">{{ $testi->nama }}</p>
                     <!-- <span class="position">MANAGER</span> -->
                   </div>
+                  @endforeach
                 </div>
+                
               </div>
+              
             </div>
-          </div>
-        </div>
+         
       </div>
 
 <!-- END TESTIMONI -->

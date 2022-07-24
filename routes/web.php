@@ -10,6 +10,7 @@ use App\Http\Controllers\LandingOurGarage;
 use App\Http\Controllers\AllCarsController;
 use App\Http\Controllers\CarTypeController;
 use App\Http\Controllers\TestimoniController;
+use App\Http\Controllers\LandingController;
 
 
 
@@ -37,9 +38,7 @@ Route::get('/detail_bike', function () {
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
-Route::get('/', function () {
-    return view('landing');
-})->name('landing');
+Route::get('/',[LandingController::class,'index'])->name('landing');
 Route::get('/car',[LandingOurGarage::class,'index'])->name('car');
 Route::get('/allcar',[AllCars::class,'index'])->name('allcar');
 Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
