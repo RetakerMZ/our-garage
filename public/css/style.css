@@ -12327,8 +12327,9 @@ textarea.form-control {
     }
 }
 /* JUMBOTRON */
+
 .jumbot__::before {
-    height: 200px;
+    height: 250px;
     content: "";
     position: absolute;
     width: 100%;
@@ -12341,6 +12342,7 @@ textarea.form-control {
 .jumbot__ {
     background-size: cover;
     height: 200px;
+    ;
 }
 .jumbot__ .display-4 {
     position: absolute;
@@ -12793,6 +12795,14 @@ textarea.form-control {
 /*END CAROUSEL */
 
 /* CAR PAGE  FIND CAR BY MODEL*/
+.categoryimg img{
+    /* border: none; */
+    
+    width: 4em;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+}  
 .car__{
     display: block;
     margin-left: auto;
