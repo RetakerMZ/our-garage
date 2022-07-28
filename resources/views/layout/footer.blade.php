@@ -1,3 +1,4 @@
+<section class="ftco-section" id="foot">
 <footer class="ftco-footer ftco-bg-dark">
         <div class="container" id="contact">
             <div class="row mt-5">
@@ -12,10 +13,10 @@
                 <h2 class="ftco-heading-2">Navigation</h2>
                 <ul class="list-unstyled">
                     <li><a href="#" class="py-2 d-block">Home</a></li>
-                    <li><a href="#" class="py-2 d-block">Our Items</a></li>
-                    <li><a href="#" class="py-2 d-block">Services</a></li>
-                    <li><a href="#" class="py-2 d-block">Term of Services</a></li>
-                    <li><a href="#" class="py-2 d-block">Contact</a></li>
+                    <li><a href="#items" class="py-2 d-block">Our Items</a></li>
+                    <li><a href="#service" class="py-2 d-block">Services</a></li>
+                    <li><a href="#testi" class="py-2 d-block">Testimoni</a></li>
+                    <li><a href="#foot" class="py-2 d-block">Contact</a></li>
                 </ul>
                 </div>
             </div>
@@ -52,5 +53,5 @@
             </div>
         </div>
         </footer>
-
+</section>
         <!-- SOSMED -->

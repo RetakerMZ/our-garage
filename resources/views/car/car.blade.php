@@ -37,53 +37,74 @@
 <!-- END CAR TYPE -->
 
 <!-- OUR CAR -->
-<div class="container-fluid bg-light py-5">
-  <div class="container pb-5">
-    <div class="row pt-3">
-      <div class="col align-item-center text-center heading-section ftco-animate title">
-        <h2>FAVOURITE CAR</h2>
-      </div>
-    </div>
-    <div class="row ftco-animate">
+<section class="ftco-section">
+                <div class="container-fluid py-5">
+                    <div class="container">
+                    <div class="row justify-content-center mt-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <!-- <span class="subheading">Services</span> -->
+                <h2 class="ftco-section">Favourite Car</h2>
+            </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel-car owl-carousel">
+                        <div class="item text-center">
+                                <div class="car-wrap rounded ftco-animate mx-auto ">
+                                    <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/agya.jpg'); height: 200px; ">
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="mb-0 text__"><a href="#">Toyota Agya</a></h2>
+                                        <div class="d-flex mb-3">
+                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
+                                        </div>
+                                        <div class="ourcar__ mx-auto">
+                                        <a href="#" class="btn btn-primary btncar">Order now</a>
+                                        <a href="#" class="btn btncar1">Details</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="item text-center">
+                                <div class="car-wrap rounded ftco-animate  mx-auto">
+                                <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/hrv.jpg'); height: 200px; ">
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="mb-0"><a href="#">Honda Hrv</a></h2>
+                                        <div class="d-flex mb-3">
+                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
+                                        </div>
+                                        <div class="ourcar__ mx-auto">
+                                        <a href="#" class="btn btn-primary btncar">Order now</a>
+                                        <a href="#" class="btn btncar1">Details</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item text-center">
+                                <div class="car-wrap rounded ftco-animate  mx-auto">
+                                <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/jazz.jpg'); height: 200px; ">
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="mb-0"><a href="#">Honda Jazz</a></h2>
+                                        <div class="d-flex mb-3">
+                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
+                                        </div>
+                                        <div class="ourcar__ mx-auto">
+                                        <a href="#" class="btn btn-primary btncar">Order now</a>
+                                        <a href="#" class="btn btncar1">Details</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
-      <div class="col-lg-4 col-6 align-item-center text-center">
-        <div class="card ourcar__">
-        <img src="images/agya.jpg" class="card-img-top" alt="...">
-          <div class="card-body ourcar-body">
-          <h5 class="card-title">Toyota Agya</h5>
-          <p class="card-text"><span>250 k</span> / day</p>
-          <a href="#" class="btn btncar1">Details </a>
-          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
-          <hr>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 align-item-center text-center">
-        <div class="card ourcar__">
-        <img src="images/jazz.jpg" class="card-img-top" alt="...">
-          <div class="card-body ourcar-body">
-          <h5 class="card-title">Honda Jazz</h5>
-          <p class="card-text"><span>400 k</span> / day</p>
-          <a href="#" class="btn btncar1">Details </a>
-          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
-          <hr>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 align-item-center text-center">
-        <div class="card ourcar__">
-        <img src="images/hrv.jpg" class="card-img-top" alt="...">
-          <div class="card-body ourcar-body">
-          <h5 class="card-title">Honda Hrv Prestige</h5>
-          <p class="card-text"><span>600 k</span> / day</p>
-          <a href="#" class="btn btncar1">Details </a>
-          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
-          <hr>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
+      <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate mx-auto">
       <a href="{{ route('allcar') }}"> <button type="button" class="btn btn-outline-primary">See More</button></a>
     </div>
     </div>

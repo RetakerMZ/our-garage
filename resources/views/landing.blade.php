@@ -172,11 +172,11 @@
             </section>
         <!-- ENDSERVICES -->
 <!-- TESTIMONI -->
-
-<div class="container py-3">
+<section class="ftco-section" id="testi">
+<div class="container py-5">
         <div class="row justify-content-center">
         <div class="col align-item-center text-center heading-section ftco-animate title">
-        <h2 class="py-3">TESTIMONIAL'S</h2>
+        <h2 class="ftco-section py-5">Testimonial's</h2>
           </div>
         </div>
         
@@ -198,6 +198,6 @@
             </div>
          
       </div>
-
+      </section>
 <!-- END TESTIMONI -->
         @endsection
