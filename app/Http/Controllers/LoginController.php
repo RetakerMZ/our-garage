@@ -17,11 +17,9 @@ class LoginController extends Controller
             'password'=>'required'
         ]);
 
-        dd('berhasil');
-
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
-            return redirect()->intended('/admin');
+            return redirect()->intended({{ route('admin') }});
         }
     }
 }
