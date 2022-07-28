@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid jumbot__" style="background-image: url('images/bg_1.jpg');">
+<div class="jumbotron jumbotron-fluid jumbot__" style="background-image: url('images/bg_1.jpg'); background-size: 100%; margin-top: 50px;">
   <div class="container">
     <h1 class="display-4"><span>SEWA </span>MOBIL <span>BALI </span></h1>
     <p class="lead">We Provide Car Rental With Affordable Price And Complete Service</p>
