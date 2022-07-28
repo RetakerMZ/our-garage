@@ -12327,22 +12327,9 @@ textarea.form-control {
     }
 }
 /* JUMBOTRON */
-
-.jumbot__::before {
-    height: 250px;
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
 .jumbot__ {
     background-size: cover;
     height: 200px;
-    ;
 }
 .jumbot__ .display-4 {
     position: absolute;
@@ -12380,22 +12367,10 @@ textarea.form-control {
     }
     .jumbot__ {
         height: 100vh;
-   
         background-size: cover;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
     }
-    .jumbot__::before {
-        height: 100vh;
-        background-size: cover;
-        content: "";
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 1;
-    }
+
 }
 
 /* END JUMBOTRON */
