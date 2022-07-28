@@ -65,7 +65,7 @@
                         <div class="carousel-car owl-carousel">
                         <div class="item text-center">
                                 <div class="car-wrap rounded ftco-animate  mx-auto">
-                                    <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/bg_2.jpg'); ">
+                                    <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/car-1.jpg'); ">
                                     </div>
                                     <div class="text">
                                         <h2 class="mb-0 text__"><a href="#">Cars</a></h2>
