@@ -43,7 +43,7 @@ Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
 
 //Login
 Route::get('/login',function(){
-    return view('admin.auth.login');
+    return view('admin.login');
 })->name('login');
 Route::post('/login',[LoginController::class,'authenticate'])->name('authenticate');
 
