@@ -12720,7 +12720,8 @@ textarea.form-control {
     -webkit-background-size: cover;
 }
 .carousel-item::before{
-    height: 264px;
+    height: 270px;
+    min-height: 300px;
     content: "";
     display: block;
     position: absolute;
