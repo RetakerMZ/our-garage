@@ -12689,19 +12689,6 @@ textarea.form-control {
 .carousel-item img{
     margin-top: 70px;
 }
-.carousel-item::before{
-    background-size: cover;
-    -webkit-background-size: cover;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: 0.7;
-}
 .carousel-caption{
     margin-bottom: 40px;
 }
@@ -12736,19 +12723,6 @@ textarea.form-control {
         background: no-repeat scroll center scroll;
         background-size: cover;
         -webkit-background-size: cover;
-    }
-    .carousel-item::before{
-        margin-top: 20px;
-        height: 100vh;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #000;
-        opacity: 0.7;
     }
     .carousel-caption h5{
         font-size: 70px;
