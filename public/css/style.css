@@ -11032,7 +11032,7 @@ h5,
     font-size: 17px;
     font-weight: 500;
 }
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .services.services-2 .icon {
         width: 80px !important;
         height: 80px !important;
@@ -11286,7 +11286,7 @@ textarea.form-control {
 .ftco-footer .logo span {
     color: #01d28e;
 }
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .ftco-footer .ftco-footer-widget h2 {
         color: var(--primarycolor);
         margin-bottom: 20px !important;
@@ -11329,7 +11329,7 @@ textarea.form-control {
         transform: translate(-50%, -50%);
     }
  }
- @media (min-width: 992px) { 
+ @media (min-width: 992px) {
     .ftco-footer .ftco-footer-widget ul li a {
         font-size: 15px;
         color: rgba(255, 255, 255, 0.8);
@@ -12713,7 +12713,7 @@ textarea.form-control {
     margin-top: -10px;
     font-size: 6px;
 }
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     .carousel-item img{
         margin-top: 50px;
     }
@@ -12746,12 +12746,12 @@ textarea.form-control {
 /* CAR PAGE  FIND CAR BY MODEL*/
 .categoryimg img{
     /* border: none; */
-    
+
     width: 4em;
     height: 35px;
     display: block;
     cursor: pointer;
-}  
+}
 .car__{
     display: block;
     margin-left: auto;
@@ -12783,21 +12783,10 @@ textarea.form-control {
     font-size: 10px;
     color: #000;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .categoryimg img{
-        /* border: none; */
-        
-        width: 15em;
         height: 8em;
-        display: block;
-
-        margin-bottom: 20px;
-        cursor: pointer;
-    }  
-    .car__{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 8em;
     }
     .category-car p{
         font-weight: 500;
@@ -12818,7 +12807,7 @@ textarea.form-control {
  }
 /* END CAR PAGE  FIND CAR BY MODEL*/
 /* RECENT CAR */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .car-wrap {
         margin-bottom: 40px;
         width: 100% !important;
@@ -12829,7 +12818,7 @@ textarea.form-control {
     }
     .car-wrap .img {
         width: 100% !important;
-        height: 220px !important;
+        height: 300px !important;
     }
     .car-wrap .text {
         font-size: 15px !important;
@@ -12875,7 +12864,7 @@ textarea.form-control {
     .card-wrap .text__ h2{
         font-size: 20px;
     }
-    
+
  }
 
 .car-wrap {
@@ -12967,7 +12956,7 @@ textarea.form-control {
     color: var(--light);
     background-color: #01d28e;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .ourcar__{
         width: 20rem;
         border: none;
@@ -12977,7 +12966,7 @@ textarea.form-control {
         font-size: 25px;
         font-weight: 600;
         margin-top: -10px;
-    
+
     }
     .ourcar-body span {
         margin-top: -15px;
@@ -13004,7 +12993,7 @@ textarea.form-control {
         font-weight: 500;
         color: var(--light);
         background-color: #01d28e;
-    }        
+    }
 }
 /* SERVICES */
 .allcars{
@@ -13013,7 +13002,7 @@ textarea.form-control {
 .cardetails{
     padding-top: 6em !important;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .services-2 h3{
         font-size: 20px !important;
     }
@@ -13061,7 +13050,7 @@ textarea.form-control {
 .cardetail_ .icon__ i{
 color: #01d28e;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .cardetail_ img{
         height: 30%;
         width: 33%;
