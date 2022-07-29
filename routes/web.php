@@ -63,7 +63,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/tipe/{id}', [CarTypeController::class, 'edit'])->name('car.tipe.edit');
     Route::get('/tipe/delete/{id}', [CarTypeController::class, 'delete'])->name('car.tipe.delete');
     Route::post('/tipe/insert', [CarTypeController::class, 'insert'])->name('car.tipe.insert');
-    Route::post('/car/update/{id}', [CarTypeController::class, 'update'])->name('car.tipe.update');
+    Route::post('/tipe/update/{id}', [CarTypeController::class, 'update'])->name('car.tipe.update');
 
     //Mobil
     Route::get('/car/create', [CarController::class, 'create'])->name('car.car.create');
@@ -87,7 +87,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/bike_type/{id}', [BikeTypeController::class, 'edit'])->name('admin.bike_type.edit');
     Route::get('/bike_type/delete/{id}', [BikeTypeController::class, 'delete'])->name('admin.bike_type.delete');
     Route::post('/bike_type/insert', [BikeTypeController::class, 'insert'])->name('admin.bike_type.insert');
-    Route::post('/bike/update/{id}', [BikeTypeController::class, 'update'])->name('admin,bike_type.update');
+    Route::post('/bike_type/update/{id}', [BikeTypeController::class, 'update'])->name('admin,bike_type.update');
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
     Route::post('/testimoni/insert', [TestimoniController::class, 'insert'])->name('testimoni.insert');
