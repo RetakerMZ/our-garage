@@ -37,9 +37,14 @@ Route::get('/carousel', function () {
     return view('layout.carousel');
 });
 Route::get('/',[LandingController::class,'index'])->name('landing');
-Route::get('/car',[LandingOurGarage::class,'index'])->name('car');
-Route::get('/allcar',[AllCars::class,'index'])->name('allcar');
-Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
+
+Route::prefix('car')->group(function(){
+    Route::get('/',[LandingOurGarage::class,'index'])->name('car');
+    Route::get('/all',[AllCars::class,'index'])->name('allcar');
+    Route::get('/{id}', [DetailCars::class, 'show'])->name('detailcar');
+
+});
+
 
 //Login
 Route::get('/login',function(){

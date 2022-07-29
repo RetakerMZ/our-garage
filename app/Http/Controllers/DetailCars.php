@@ -48,7 +48,9 @@ class DetailCars extends Controller
      */
     public function show($id)
     {
-        //
+        $details = Car::find($id);
+
+        return view('car.car_detail', compact('details'));
     }
 
     /**
