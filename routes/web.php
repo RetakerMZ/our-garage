@@ -40,7 +40,7 @@ Route::get('/',[LandingController::class,'index'])->name('landing');
 
 Route::prefix('car')->group(function(){
     Route::get('/',[LandingOurGarage::class,'index'])->name('car');
-    Route::get('/all',[AllCars::class,'index'])->name('allcar');
+    Route::get('/allcar',[AllCars::class,'index'])->name('allcar');
     Route::get('/{id}', [DetailCars::class, 'show'])->name('detailcar');
 
 });
