@@ -18,7 +18,7 @@
           <h5 class="card-title">{{$allcar->nama}}</h5>
           <p class="card-text">{{$allcar->transmition}}</p>
           <p class="card-text "><span>{{$allcar->harga}}K</span> / day</p>
-          <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20{{ $allcar->nama }} seharga Rp.{{number_format($allcar->harga,0,",",".")}} per hari, saya menyewa selama ... hari" class="btn btn-primary btncar">Order now</a>
+          <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20{{ $allcar->nama }} seharga Rp.{{number_format($allcar->harga,0,",",".")}}K per hari, saya menyewa selama ... hari" class="btn btn-primary btncar">Order now</a>
           <a href="{{ route('detailcar', $allcar->id) }}" class="btn btncar1">Details</a>
           <hr>
           </div>
