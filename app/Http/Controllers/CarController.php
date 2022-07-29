@@ -80,7 +80,6 @@ class CarController extends Controller
             'seat'=> 'required|string',
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
-            'rent' => 'nullable|string',
             'keterangan' => 'nullable|string',
             'gambar' => 'required|file|image',
         ]);
@@ -105,7 +104,6 @@ class CarController extends Controller
             'seat'=> $request->seat,
             'harga'=> $request->harga,
             'transmition' => $request->transmition,
-            'rent' => $request->rent,
             'keterangan' => $request->keterangan,
             'updated_at' => Carbon::now(),
         ]);
