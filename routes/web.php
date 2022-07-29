@@ -48,7 +48,7 @@ Route::get('/login',function(){
 
 Route::post('/login',[LoginController::class,'authenticate'])->name('authenticate');
 
-Route::middleware(['auth'])->prefix('/admin')->group(function() {
+Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'landing'])->name('admin');
 
     //Kategori Mobil
