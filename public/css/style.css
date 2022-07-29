@@ -12786,7 +12786,8 @@ textarea.form-control {
 @media (min-width: 768px) {
     .categoryimg img{
         height: 8em;
-        width: 8em;
+        width: 15em;
+        margin-left: -45px;
     }
     .category-car p{
         font-weight: 500;
