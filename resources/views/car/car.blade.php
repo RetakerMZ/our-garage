@@ -51,16 +51,16 @@
                         <div class="carousel-car owl-carousel">
                         <div class="item text-center">
                                 <div class="car-wrap rounded ftco-animate mx-auto ">
-                                    <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/agya.jpg'); height: 200px; ">
+                                    <div class="img rounded d-flex align-items-center mx-auto" style="background-image: url('images/agya.jpg'); height: 100%; ">
                                     </div>
                                     <div class="text">
                                         <h2 class="mb-0 text__"><a href="#">Toyota Agya</a></h2>
                                         <div class="d-flex mb-3">
                                             <!-- <span>Lorem ipsum dolor sit amet</span> -->
                                         </div>
-                                        <div class="ourcar__ mx-auto">
+                                        <div class="mx-auto">
                                         <a href="#" class="btn btn-primary btncar">Order now</a>
-                                        <a href="#" class="btn btncar1">Details</a>
+                                        <a href="#" class="btn btn-success">Details</a>
                                     </div>
                                 </div>
                                 </div>
@@ -74,9 +74,9 @@
                                         <div class="d-flex mb-3">
                                             <!-- <span>Lorem ipsum dolor sit amet</span> -->
                                         </div>
-                                        <div class="ourcar__ mx-auto">
+                                        <div class="mx-auto">
                                         <a href="#" class="btn btn-primary btncar">Order now</a>
-                                        <a href="#" class="btn btncar1">Details</a>
+                                        <a href="#" class="btn btn-success">Details</a>
                                     </div>
                                     </div>
                                 </div>
@@ -90,9 +90,9 @@
                                         <div class="d-flex mb-3">
                                             <!-- <span>Lorem ipsum dolor sit amet</span> -->
                                         </div>
-                                        <div class="ourcar__ mx-auto">
+                                        <div class="mx-auto">
                                         <a href="#" class="btn btn-primary btncar">Order now</a>
-                                        <a href="#" class="btn btncar1">Details</a>
+                                        <a href="#" class="btn btn-success">Details</a>
                                     </div>
                                     </div>
                                 </div>

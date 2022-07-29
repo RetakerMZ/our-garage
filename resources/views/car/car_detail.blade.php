@@ -9,11 +9,11 @@
         <h2>CAR DETAIL'S</h2>
       </div>
     </div>
-    @foreach ($details as $detail)
+    
     <div class="card cardetail_">
-  <img src="{{asset('storage/images/cars/'.$details->gambar)}}" class="card-img-top" alt="...">
+  <img src="images/agya.jpg" class="card-img-top" alt="...">
   <div class="card-body mx-auto">
-      <h1 class="text-center ftco-animate name">{{$detail->nama}}</h1>
+      <h1 class="text-center ftco-animate name">Agya</h1>
   <p class="card-text ftco-animate"><span>500k</span> / day</p>
     <div class="row">
     <div class="col-md col-6 d-flex align-self-stretch ms-auto ftco-animate">
@@ -39,7 +39,7 @@
 	              	<div class="text">
 		                <h3 class="heading mb-0 pl-3">
 		                	Seat
-		                	<span>{{$detail->seat}} Adult's</span>
+		                	<span>7 Adult's</span>
 		                </h3>
 	                </div>
                 </div>
@@ -54,14 +54,14 @@
 	              	<div class="text">
 		                <h3 class="heading mb-0 pl-3">
 		                	Transmition
-		                	<span>{{$detail->transmition}}</span>
+		                	<span>manual</span>
 		                </h3>
 	                </div>
                 </div>
               </div>
             </div>
           </div>
-          @endforeach
+          
           <!-- <div class="col-md col-6 d-flex align-self-stretch ms-auto ftco-animate">
             <div class="media block-6 services">
               <div class="media-body py-md-4">
@@ -77,7 +77,7 @@
               </div>
             </div>
           </div> -->
-          <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate">
+          <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate mb-5">
       <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
     </div>
 

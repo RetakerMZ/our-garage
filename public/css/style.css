@@ -13039,6 +13039,11 @@ textarea.form-control {
 .cardetail_{
     border: none;
 }
+.cardetail_ img{
+    height: 50%;
+    width: 70%;
+    align-self: center;
+}
 .cardetail_ .name{
     font-size: 15px;
 }
@@ -13057,6 +13062,11 @@ textarea.form-control {
 color: #01d28e;
 }
 @media (min-width: 768px) { 
+    .cardetail_ img{
+        height: 30%;
+        width: 33%;
+        align-self: center;
+    }
     .cardetail_{
         border: none;
     }
