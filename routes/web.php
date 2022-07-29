@@ -63,6 +63,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/tipe/{id}', [CarTypeController::class, 'edit'])->name('car.tipe.edit');
     Route::get('/tipe/delete/{id}', [CarTypeController::class, 'delete'])->name('car.tipe.delete');
     Route::post('/tipe/insert', [CarTypeController::class, 'insert'])->name('car.tipe.insert');
+    Route::post('/car/update/{id}', [CarTypeController::class, 'update'])->name('car.tipe.update');
 
     //Mobil
     Route::get('/car/create', [CarController::class, 'create'])->name('car.car.create');
