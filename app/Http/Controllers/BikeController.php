@@ -68,8 +68,7 @@ class BikeController extends Controller
             'fuel'=> 'required|string',
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
-            'rent' => 'required|string',
-            'keterangan' => 'required|string',
+            'keterangan' => 'nullable|string',
             'gambar' => 'required|file|image',
         ]);
         if ($request->hasFile('gambar')) {
@@ -92,7 +91,6 @@ class BikeController extends Controller
             'fuel'=> $request->fuel,
             'harga'=> $request->harga,
             'transmition' => $request->transmition,
-            'rent' => $request->rent,
             'keterangan' => $request->keterangan,
             'updated_at' => Carbon::now(),
         ]);
