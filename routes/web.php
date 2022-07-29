@@ -45,6 +45,7 @@ Route::get('/detailcar',[DetailCars::class,'index'])->name('detailcar');
 Route::get('/login',function(){
     return view('auth.login');
 })->name('login');
+
 Route::post('/login',[LoginController::class,'authenticate'])->name('authenticate');
 
 Route::middleware(['auth'])->prefix('admin')->group(function() {
