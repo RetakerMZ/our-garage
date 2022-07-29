@@ -51,6 +51,13 @@ class CarTypeController extends Controller
         }
     }
 
+    public function edit($id)
+    {
+        //
+        $car_type = CarType::find($id);
+        return view ('admin.car.tipe.edit',compact('car_type'));
+    }
+
     public function update(Request $request, $id)
     {
         //

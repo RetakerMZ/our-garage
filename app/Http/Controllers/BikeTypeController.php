@@ -48,6 +48,13 @@ class BikeTypeController extends Controller
         }
     }
 
+    public function edit($id)
+    {
+        //
+        $bike_type = BikeType::find($id);
+        return view ('admin.bike_type.edit',compact('bike_type'));
+    }
+
     public function update(Request $request, $id)
     {
         //
