@@ -38,7 +38,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($car as $row)
+                    @foreach ($bike as $row)
                     <tr>
                       <td>{{$row->name}}</td>
                       <td>{{$row->tipe_motor}}</td>
