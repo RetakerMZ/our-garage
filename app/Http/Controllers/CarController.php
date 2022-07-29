@@ -80,7 +80,7 @@ class CarController extends Controller
             'seat'=> 'required|string',
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
-            'rent' => 'required|string',
+            'rent' => 'nullable|string',
             'keterangan' => 'nullable|string',
             'gambar' => 'required|file|image',
         ]);
