@@ -46,7 +46,7 @@
                             @csrf
                             @method('delete')
                             <a class="btn btn-sm btn-info"
-                                href="{{ route('admin.bike_type.edit', $row->id) }}"><i
+                                href="{{ route('admin.bike_type.update', $row->id) }}"><i
                                     class="far fa-edit"></i> Edit</a>
                             <button type="submit" class="btn btn-sm btn-outline-danger"><i
                                     class="far fa-trash-alt"></i> Hapus</button>
