@@ -97,13 +97,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                     </div>
                 </div>
             </div>
-        </section>      
+        </section>
       <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate mx-auto">
       <a href="{{ route('allcar') }}"> <button type="button" class="btn btn-outline-primary">See More</button></a>
     </div>
