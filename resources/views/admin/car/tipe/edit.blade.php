@@ -13,7 +13,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
           <a href="{{ route('car.tipe.index') }}" class="nav-link">
-            <h1>Tambah Data Tipe Mobil</h1>
+            <h1>Edit Data Tipe Mobil</h1>
 </a>
           </div>
           <div class="col-sm-6">

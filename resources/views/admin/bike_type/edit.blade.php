@@ -13,7 +13,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
           <a href="{{ route('admin.bike_type.index') }}" class="nav-link">
-            <h1>Tambah Data Tipe Motor</h1>
+            <h1>Edit Data Tipe Motor</h1>
 </a>
           </div>
           <div class="col-sm-6">
