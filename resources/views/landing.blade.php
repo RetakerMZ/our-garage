@@ -179,8 +179,8 @@
         <h2 class="ftco-section py-5">Testimonial's</h2>
           </div>
         </div>
-        
-          
+
+
             <div class="carousel-testimony owl-carousel ftco-owl">
               @foreach($testimonis as $testi)
               <div class="item">
@@ -191,12 +191,12 @@
                     <p class="mb-4">{{$testi->caption}}</p>
                     <p class="name">{{ $testi->nama }}</p>
                     <!-- <span class="position">MANAGER</span> -->
-                  </div> 
+                  </div>
                 </div>
               </div>
               @endforeach
             </div>
-         
+
       </div>
       </section>
 <!-- END TESTIMONI -->

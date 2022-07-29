@@ -81,7 +81,7 @@ class CarController extends Controller
             'harga'=> 'required|numeric',
             'transmition' => 'required|string',
             'rent' => 'required|string',
-            'keterangan' => 'required|string',
+            'keterangan' => 'nullable|string',
             'gambar' => 'required|file|image',
         ]);
         if ($request->hasFile('gambar')) {
