@@ -34,8 +34,8 @@
                       <th>Keterangan</th>
                       <th>Gambar</th>
                       <th>Rent</th>
-
                       <th>Aksi</th>
+                      <th>Available</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -63,6 +63,22 @@
                             <button type="submit" class="btn btn-sm btn-outline-danger"><i
                                     class="far fa-trash-alt"></i> Hapus</button>
                         </form>
+                      </td>
+                      <td>
+                        <button id="btn" onclick="toggle();">Available</button>
+                        <script>
+                          var clicked = false;
+                          function toggle(){
+                            if(!clicked){
+                              clicked = true;
+                              document.getElementById("btn").innerHTML = "Available";
+                            }
+                            else{
+                              clicked = false;
+                              document.getElementById("btn").innerHTML = "Rented";
+                            }
+                          }
+                        </script>
                       </td>
                     </tr>
                     @endforeach
