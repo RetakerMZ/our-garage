@@ -65,17 +65,23 @@
                         </form>
                       </td>
                       <td>
-                        <button id="btn" onclick="toggle();">Available</button>
+                        <a id="btn" class="btn btn-warning" onclick="toggle();">Available</a>
+                   
                         <script>
                           var clicked = false;
                           function toggle(){
                             if(!clicked){
                               clicked = true;
                               document.getElementById("btn").innerHTML = "Available";
+                              document.getElementById("btn").style.background = "#FFC107";
+                              
                             }
                             else{
                               clicked = false;
                               document.getElementById("btn").innerHTML = "Rented";
+                              document.getElementById("btn").style.background = "red";
+                              document.getElementById("btn").style.textDecorationColor = "black";
+                              document.getElementById("btn").style.textDecoration = "bold";
                             }
                           }
                         </script>
