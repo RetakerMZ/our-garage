@@ -22,6 +22,7 @@ class AllCars extends Controller
             if(count($request->tipe_mobil) != count($types)){
                 $allcars = $allcars->whereIn('tipe_mobil',$request->tipe_mobil);
             }
+            dd($request->tipe_mobil);
         }
         return view('car.all_car',compact('allcars'));
     }
