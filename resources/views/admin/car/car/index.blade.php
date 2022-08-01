@@ -65,7 +65,7 @@
                         </form>
                       </td>
                       <td>
-                        <?php if ($row->rent == 'yes') : ?>
+                        <?php if ($row->rent == 'no') : ?>
                             <a id="btn-{{$row->id}}" class="btn btn-warning" href="{{route ('car.car.rented', $row->id)}}">Rented</a>
                         <?php else : ?>
                             <a id="btn-{{$row->id}}" class="btn btn-warning" href="{{route ('car.car.available', $row->id)}}">Available</a>
