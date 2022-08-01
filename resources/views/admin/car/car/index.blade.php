@@ -72,16 +72,16 @@
                           function toggle(){
                             if(!clicked){
                               clicked = true;
-                              document.getElementById("btn-"{!! json_encode({{$row->id}}, JSON_HEX_TAG) !!}).innerHTML = "Available";
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).style.background = "#FFC107";
+                              document.getElementById("btn-"+id).innerHTML = "Available";
+                              document.getElementById("btn-"+id).style.background = "#FFC107";
 
                             }
                             else{
                               clicked = false;
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).innerHTML = "Rented";
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).style.background = "red";
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).style.textDecorationColor = "black";
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).style.textDecoration = "bold";
+                              document.getElementById("btn-"+id).innerHTML = "Rented";
+                              document.getElementById("btn-"+id).style.background = "red";
+                              document.getElementById("btn-"+id).style.textDecorationColor = "black";
+                              document.getElementById("btn-"+id).style.textDecoration = "bold";
                             }
                           }
                         </script>
