@@ -74,7 +74,9 @@
                               clicked = true;
                               document.getElementById("btn-"+id).innerHTML = "Available";
                               document.getElementById("btn-"+id).style.background = "#FFC107";
-
+                              let url = "{{ route('car.car.available', ':id') }}";
+                                url = url.replace(':id', id);
+                                document.location.href=url;
                             }
                             else{
                               clicked = false;
@@ -82,6 +84,9 @@
                               document.getElementById("btn-"+id).style.background = "red";
                               document.getElementById("btn-"+id).style.textDecorationColor = "black";
                               document.getElementById("btn-"+id).style.textDecoration = "bold";
+                              let url = "{{ route('car.car.rented', ':id') }}";
+                                url = url.replace(':id', id);
+                                document.location.href=url;
                             }
                           }
                         </script>

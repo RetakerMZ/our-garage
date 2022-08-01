@@ -72,6 +72,9 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/car/{id}', [CarController::class, 'edit'])->name('car.car.edit');
     Route::post('/car/update/{id}', [CarController::class, 'update'])->name('car.car.update');
     Route::get('/car/delete/{id}', [CarController::class, 'delete'])->name('car.car.delete');
+    Route::get('/car/available/{id}', [CarController::class, 'available'])->name('car.car.available');
+    Route::get('/car/rented/{id}', [CarController::class, 'rented'])->name('car.car.rented');
+
 
     //Motor
     Route::get('/bike/create', [BikeController::class, 'create'])->name('admin.bike.create');

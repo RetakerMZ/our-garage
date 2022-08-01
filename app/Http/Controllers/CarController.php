@@ -132,4 +132,23 @@ class CarController extends Controller
         }
     }
 
+    public function available ($id)
+    {
+        //
+        $car = Car::find($id);
+        $update = $car->update([
+            'rent' => 'no',
+        ]);
+        return back();
+    }
+
+    public function rented ($id)
+    {
+        //
+        $car = Car::find($id);
+        $update = $car->update([
+            'rent' => 'yes',
+        ]);
+        return back();
+    }
 }
