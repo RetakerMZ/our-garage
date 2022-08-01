@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Car;
+use App\Models\CarType;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -13,9 +14,15 @@ class AllCars extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $allcars = Car::all();
+        $types = CarType::all();
+        if(!empty($request->tipe_mobil)){
+            if(count($request->tipe_mobil) != count($types)){
+                $allcars = $allcars->whereIn('tipe_mobil',$request->types);
+            }
+        }
         return view('car.all_car',compact('allcars'));
     }
 

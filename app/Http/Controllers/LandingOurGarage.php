@@ -16,13 +16,7 @@ class LandingOurGarage extends Controller
     public function index(Request $request)
     {
         $car = Car::paginate(3);
-        $cars = Car::all();
         $types = CarType::all();
-        if(!empty($request->tipe_mobil)){
-            if(count($request->tipe_mobil) != count($types)){
-                $cars = $cars->whereIn('tipe_mobil',$request->types);
-            }
-        }
         return view('car.car',compact('types','car','cars'));
     }
 
