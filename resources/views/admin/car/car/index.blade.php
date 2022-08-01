@@ -72,7 +72,7 @@
                           function toggle(){
                             if(!clicked){
                               clicked = true;
-                              document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).innerHTML = "Available";
+                              document.getElementById("btn-"{!! json_encode({{$row->id}}, JSON_HEX_TAG) !!}).innerHTML = "Available";
                               document.getElementById("btn-"{!! json_encode($row->id(), JSON_HEX_TAG) !!}).style.background = "#FFC107";
 
                             }
