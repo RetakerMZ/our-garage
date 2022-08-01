@@ -68,7 +68,7 @@
                         <?php if ($row->rent == 'yes') : ?>
                             <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="{{ route('car.car.rented', $row->id) }}">Rented</a>
                         <?php else : ?>
-                            <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="{{ route('car.car.Available', $row->id) }}">Available</a>
+                            <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="{{ route('car.car.available', $row->id) }}">Available</a>
                         <?php endif; ?>
 
 
