@@ -23,11 +23,10 @@
           <div class="col-lg-2 col-md-4 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
-                <img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt="">
+                <a href=""><img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt=""></a>           
                 <p>{{$tipe->tipe_mobil}}</p>
               </div>
             </div>
-
           </div>
           @endforeach
     </div>

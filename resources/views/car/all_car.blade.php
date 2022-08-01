@@ -16,7 +16,7 @@
         <img src="{{asset('storage/images/cars/'.$allcar->gambar)}}" class="card-img-top" alt="...">
         @if ($allcar->rent == 'yes')
             <div
-                class="card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
+                class="car-info card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
                 <h4 class="fw-bold bg-default-secondary text-white p-2">RENTED</h4>
             </div>
         @endif

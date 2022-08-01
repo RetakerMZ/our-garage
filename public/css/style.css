@@ -13081,3 +13081,22 @@ color: #01d28e;
     }
  }
 /*END CAR DETAIL */
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 20em;
+    left: 5em;
+    padding: 1.25rem;
+    border-radius: calc(0.25rem - 1px);
+    text-decoration: #005cbf;
+}
+
+.bg-default-secondary {
+    background-color: #ff8200 !important;
+    opacity: 0.9;
+}
+
+.car-info h4 {
+    border-radius: 10px;
+}
