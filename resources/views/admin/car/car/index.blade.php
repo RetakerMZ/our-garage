@@ -65,11 +65,11 @@
                         </form>
                       </td>
                       <td>
-                        <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="toggle();">Available</a>
+                        <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="toggle({{$row->id}});">Available</a>
 
                         <script>
                           var clicked = false;
-                          function toggle(){
+                          function toggle(id){
                             if(!clicked){
                               clicked = true;
                               document.getElementById("btn-"+id).innerHTML = "Available";
