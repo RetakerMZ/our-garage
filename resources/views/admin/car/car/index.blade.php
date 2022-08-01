@@ -65,12 +65,17 @@
                         </form>
                       </td>
                       <td>
-                        <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="toggle({{$row->id}});">Available</a>
+                        <?php if ($row->rent == 'yes') : ?>
+                            <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="{{ route('car.car.rented', $row->id) }}">Rented</a>
+                        <?php else : ?>
+                            <a id="btn-{{$row->id}}" class="btn btn-warning" onclick="{{ route('car.car.Available', $row->id) }}">Available</a>
+                        <?php endif; ?>
 
-                        <script>
+
+                        {{-- <script>
                           var clicked = false;
                           function toggle(id){
-                            if(!clicked){
+                            if({{$row -> rent}}){
                               clicked = true;
                               document.getElementById("btn-"+id).innerHTML = "Available";
                               document.getElementById("btn-"+id).style.background = "#FFC107";
@@ -89,7 +94,8 @@
                                 document.location.href=url;
                             }
                           }
-                        </script>
+                        </script> --}}
+
                       </td>
                     </tr>
                     @endforeach
