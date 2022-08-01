@@ -11,16 +11,10 @@ use Illuminate\Support\Facades\Storage;
 
 class CarController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $car = Car::all();
         $car_type = CarType::all();
-        //filter category
-        if(!empty($request->tipe_mobil)){
-            if(count($request->tipe_mobil) != count($car_type)){
-                $car = $car->whereIn('tipe_mobil',$request->tipe_mobil);
-            }
-        }
 
         return view('admin.car.car.index',compact('car'));
     }
