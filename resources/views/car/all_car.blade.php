@@ -14,6 +14,12 @@
       <div class="col-lg-4 col-6 align-item-center text-center">
         <div class="card ourcar__">
         <img src="{{asset('storage/images/cars/'.$allcar->gambar)}}" class="card-img-top" alt="...">
+        @if ($allcar->rent == 'yes')
+            <div
+                class="card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
+                <h4 class="fw-bold bg-default-secondary text-white p-2">RENTED</h4>
+            </div>
+        @endif
           <div class="card-body ourcar-body">
           <h5 class="card-title">{{$allcar->nama}}</h5>
           <p class="card-text">{{$allcar->transmition}}</p>
