@@ -66,9 +66,9 @@
                       </td>
                       <td>
                         <?php if ($row->rent == 'yes') : ?>
-                            <button id="btn-{{$row->id}}" class="btn btn-warning" onclick="window.location'{{ route('car.car.rented', $row->id) }}'">Rented</button>
+                            <button id="btn-{{$row->id}}" class="btn btn-warning" href="{{route ('car.car.rented', $row->id)}}">Rented</button>
                         <?php else : ?>
-                            <button id="btn-{{$row->id}}" class="btn btn-warning" onclick="window.location'{{ route('car.car.available', $row->id) }}'">Available</button>
+                            <button id="btn-{{$row->id}}" class="btn btn-warning" href="{{route ('car.car.available', $row->id)}}">Available</button>
                         <?php endif; ?>
 
 
