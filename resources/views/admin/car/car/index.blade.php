@@ -22,8 +22,8 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <table class=" table table-bordered ">
-                  <thead >
+                <table class="table table-bordered">
+                  <thead>
                     <tr>
                       <th>Nama Mobil</th>
                       <th>Kategori</th>
@@ -44,7 +44,7 @@
                     @foreach ($car as $row)
                     <?php  $i++; ?>
                     <?php $bg=($i%2==0?'#E1E5EA':'white'); ?>
-                    <tr style="background-color: <?php echo $bg; ?>; border-style: solid; border-width: 2px;">
+                    <tr style="background-color: <?php echo $bg; ?>; border-style: solid; border-width: 1px;">
                       <td>{{$row->nama}}</td>
                       <td>{{$row->tipe_mobil}}</td>
                       <td>{{$row->harga}}</td>

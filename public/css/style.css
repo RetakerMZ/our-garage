@@ -12919,6 +12919,10 @@ textarea.form-control {
     font-weight: 600;
     width: 50%;
 }
+.ourcar__ img{
+    width: 100%;
+
+}
 .ourcar__{
     width: 8rem;
     border: none;
@@ -13081,22 +13085,62 @@ color: #01d28e;
     }
  }
 /*END CAR DETAIL */
-.card-img-overlay {
+
+ 
+@media (min-width: 992px) { 
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 20em;
+        left: 5em;
+        padding: 1.25rem;
+        border-radius: calc(0.25rem - 1px);
+        text-decoration: #005cbf;
+    }
+    
+    .bg-default-secondary {
+        position: absolute;
+        background-color: var(--primarycolor) !important;
+        
+    }
+    .ourcar__ .bg-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 20rem !important;
+        background-color: rgba(1, 210, 142, 0.4);
+    }
+    
+    .car-info h4 {
+        border-radius: 10px;
+        font-size: large !important;
+    }
+ }
+
+ .card-img-overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 20em;
-    left: 5em;
-    padding: 1.25rem;
-    border-radius: calc(0.25rem - 1px);
     text-decoration: #005cbf;
 }
 
 .bg-default-secondary {
-    background-color: #ff8200 !important;
-    opacity: 0.9;
+    position: absolute;
+    background-color: var(--primarycolor) !important;
+    
+}
+.ourcar__ .bg-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 8rem;
+    background-color: rgba(1, 210, 142, 0.4);
 }
 
 .car-info h4 {
-    border-radius: 10px;
+    border-radius: 5px;
+    font-size: xx-small;
 }
