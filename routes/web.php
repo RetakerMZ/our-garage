@@ -5,15 +5,16 @@ use App\Http\Controllers\DetailCars;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\BikeController;
-use App\Http\Controllers\BikeTypeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LandingOurGarage;
 use App\Http\Controllers\AllCarsController;
 use App\Http\Controllers\CarTypeController;
-use App\Http\Controllers\TestimoniController;
 use App\Http\Controllers\LandingController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BikeTypeController;
+use App\Http\Controllers\TestimoniController;
 use Illuminate\Routing\Route as RoutingRoute;
+use App\Http\Controllers\BikeProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +45,11 @@ Route::prefix('car')->group(function(){
     Route::get('/',[LandingOurGarage::class,'index'])->name('car');
     Route::get('/all',[AllCars::class,'index'])->name('allcar');
     Route::get('/{id}', [DetailCars::class, 'show'])->name('detailcar');
+
+});
+
+Route::prefix('bike')->group(function(){
+    Route::get('/',[BikeProductController::class,'index'])->name('bike.index');
 
 });
 

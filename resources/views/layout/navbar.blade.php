@@ -14,7 +14,7 @@
 				</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
 				<a class="dropdown-item" href="{{ route('car') }}">Car</a>
-				<a class="dropdown-item" href="#">Motorcycle</a>
+				<a class="dropdown-item" href="{{route('bike.index')}}">Motorcycle</a>
 				<a class="dropdown-item" href="#">Camera</a>
 				<a class="dropdown-item" href="#">BBQ Package</a>
 				</div>

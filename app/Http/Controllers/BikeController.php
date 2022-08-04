@@ -41,7 +41,7 @@ class BikeController extends Controller
 
         $store = Bike::insert([
             'tipe_motor' => $request->tipe_motor,
-            'nama' => $request->name,
+            'name' => $request->name,
             'harga' => $request->harga,
             'fuel' => $request->fuel,
             'transmition' => $request->transmition,
