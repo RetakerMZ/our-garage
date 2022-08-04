@@ -73,7 +73,7 @@
                     <label for="tipe_mobil">Tipe Motor</label>
                     <select class="form-control" id="tipe_motor" name="tipe_motor">
                         <option value="" selected disabled>Pilih Kategori</option>
-                        @foreach ($mbike_type as $bike_types)
+                        @foreach ($bike_type as $bike_types)
                         <option>{{$bike_types->tipe_motor}}</option>
                         @endforeach
                     </select>

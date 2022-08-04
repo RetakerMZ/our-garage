@@ -5,6 +5,7 @@ use App\Http\Controllers\DetailCars;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\BikeController;
+use App\Http\Controllers\BikeTypeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LandingOurGarage;
 use App\Http\Controllers\AllCarsController;
@@ -41,7 +42,7 @@ Route::get('/',[LandingController::class,'index'])->name('landing');
 
 Route::prefix('car')->group(function(){
     Route::get('/',[LandingOurGarage::class,'index'])->name('car');
-    Route::get('/all/{tipe_mobil}',[AllCars::class,'index'])->name('allcar');
+    Route::get('/all',[AllCars::class,'index'])->name('allcar');
     Route::get('/{id}', [DetailCars::class, 'show'])->name('detailcar');
 
 });
@@ -86,10 +87,10 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
 
     //Kategori Motor
     Route::get('/bike_type/index', [BikeTypeController::class, 'index'])->name('admin.bike_type.index');
+    Route::post('/bike_type/insert', [BikeTypeController::class, 'insert'])->name('admin.bike_type.insert');
     Route::get('/bike_type/create', [BikeTypeController::class, 'create'])->name('admin.bike_type.create');
     Route::get('/bike_type/{id}', [BikeTypeController::class, 'edit'])->name('admin.bike_type.edit');
     Route::get('/bike_type/delete/{id}', [BikeTypeController::class, 'delete'])->name('admin.bike_type.delete');
-    Route::post('/bike_type/insert', [BikeTypeController::class, 'insert'])->name('admin.bike_type.insert');
     Route::post('/bike_type/update/{id}', [BikeTypeController::class, 'update'])->name('admin,bike_type.update');
     //testimoni
     Route::resource('testimoni', TestimoniController::class);

@@ -39,8 +39,12 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <?php $i=0; ?>
+                    
                     @foreach ($car as $row)
-                    <tr>
+                    <?php  $i++; ?>
+                    <?php $bg=($i%2==0?'#E1E5EA':'white'); ?>
+                    <tr style="background-color: <?php echo $bg; ?>; border-style: solid; border-width: 1px;">
                       <td>{{$row->nama}}</td>
                       <td>{{$row->tipe_mobil}}</td>
                       <td>{{$row->harga}}</td>
