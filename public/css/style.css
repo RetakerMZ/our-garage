@@ -13087,7 +13087,7 @@ color: #01d28e;
 /*END CAR DETAIL */
 
  
-@media (min-width: 992px) { 
+@media (min-width: 768px) { 
     .card-img-overlay {
         position: absolute;
         top: 0;

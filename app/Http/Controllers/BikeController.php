@@ -28,7 +28,7 @@ class BikeController extends Controller
         //
         $bike = Bike::find($id);
         $bike_type = BikeType::orderBy('tipe_motor')->get();
-        return view ('admin.bike.bike.edit',compact('bike', 'bike_type'));
+        return view ('admin.bike.edit',compact('bike', 'bike_type'));
     }
 
 

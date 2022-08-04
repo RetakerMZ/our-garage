@@ -50,16 +50,16 @@
               <div class="col-md-6">
               <div class="form-group">
                     <label for="exampleInputEmail1">Nama Motor</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nama Mobil" value="{{ $car->nama }}">
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nama Mobil" value="{{ $bike->nama }}">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Harga</label>
-                    <input type="number" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000" value="{{ $car->harga }}">
+                    <input type="number" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000" value="{{ $bike->harga }}">
                   </div>
                 <div class="form-group">
                   <label>Bahan Bakar</label>
                   <select name="fuel" class="form-control select2" style="width: 100%;">
-                  <option selected>{{ $car->fuel }}</option>
+                  <option selected>{{ $bike->fuel }}</option>
                     <option value="Premium">Premium</option>
                     <option value="Pertalite">Pertalite</option>
                     <option value="Pertamax">Pertamax</option>
