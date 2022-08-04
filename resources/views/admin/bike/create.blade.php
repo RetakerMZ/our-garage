@@ -44,7 +44,7 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <form action="{{ route('admin.bike.create') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.bike.insert') }}" method="POST" enctype="multipart/form-data">
                 @csrf
             <div class="row">
               <div class="col-md-6">
