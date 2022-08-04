@@ -23,6 +23,15 @@ class BikeController extends Controller
         return view('admin.bike.create',compact('bike_type'));
     }
 
+    public function edit($id)
+    {
+        //
+        $bike = Bike::find($id);
+        $bike_type = BikeType::orderBy('tipe_motor')->get();
+        return view ('admin.bike.bike.edit',compact('bike', 'bike_type'));
+    }
+
+
     public function insert(Request $request)
     {
         $validatedData = $request->validate([
