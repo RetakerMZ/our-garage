@@ -81,17 +81,22 @@
                 <div class="form-group">
                   <label>Transmisi</label>
                   <select name="transmition" class="form-control select2" style="width: 100%;">
-                  <option selected>{{ $car->transmition }}</option>
+                  <option selected>{{ $bike->transmition }}</option>
                     <option value="manual">manual</option>
                     <option value="automatic">automatic</option>
                   </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Keterangan</label>
+                    <textarea name="keterangan" class="form-control" id="exampleInputEmail1" placeholder="Mobil" rows="3">
+                     {{ old('keterangan') }}</textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Gambar Motor</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" name="gambar" class="form-control" id="gambar"
-                          accept="image/png,image/jpeg,image/jpg" value="{{ $car->gambar }}">
+                          accept="image/png,image/jpeg,image/jpg" value="{{ $bike->gambar }}">
                       </div>
                     </div>
                   </div>
