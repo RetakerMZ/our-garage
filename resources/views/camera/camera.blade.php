@@ -22,7 +22,7 @@
         @foreach ($camera as $camera)
         <div class="col-lg-4 col-6 align-item-center text-center">
           <div class="card ourcar__">
-          <!-- <img src="{{asset('storage/images/cameras/'.$camera->gambar)}}" class="card-img-top" alt="..."> -->
+          <img src="{{asset('storage/images/cameras/'.$camera->gambar)}}" class="card-img-top" alt="...">
           @if ($camera->rent == 'yes')
               <div
                   class="ourcar__ car-info card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
@@ -31,7 +31,14 @@
           @endif
             <div class="card-body ourcar-body text-center">
             <h5 class="card-title">{{$camera->nama}}</h5>
-            <p class="text-center">HY</p>
+            <div class="text-center text-dark ">
+            <p class="text-start">Pixel {{$camera->pixel}}</p>
+            <p class="text-start">Display {{$camera->display}}</p>
+            <p class="text-start">Optical_zoom {{$camera->optical_zoom}}</p>
+            <p class="text-start">Memory {{$camera->memory}}</p>
+            <p class="text-start">Battrey {{$camera->battrey}}</p>
+            </div>
+
             <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20kamera {{ $camera->nama }} Apakah item tersebut tersedia?" >
       <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
       </a>

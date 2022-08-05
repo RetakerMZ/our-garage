@@ -55,7 +55,7 @@
 
                       <td>
                         <form action="{{ route('admin.bike.delete', $row->id) }}"
-                            method="POST"
+                            method="GET"
                             onsubmit="return confirm('Apakah anda yakin menghapus data ini?')">
                             @csrf
                             @method('delete')
