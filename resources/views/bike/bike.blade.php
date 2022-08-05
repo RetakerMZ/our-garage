@@ -19,7 +19,7 @@
         <!-- <p>By Type</p> -->
         <div class="row ">
           @foreach($type as $tipe)
-          <div class="col-lg-2 col-md-4 col-4 car__">
+          <div class="col-lg-3 col-md-3 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
               <a href="{{ route('bike.index', ['tipe_motor[]' => $tipe->tipe_motor]) }}"><img src="{{asset('storage/images/tipe_motors/'.$tipe->gambar)}}" alt=""></a>
