@@ -24,7 +24,7 @@
               </div>
             </div>
           </div>
-        </div>      
+        </div>
     </div>
   </div>
   </div>
@@ -39,22 +39,27 @@
       </div>
     </div>
     <div class="row ftco-animate">
-    
-      <div class="col-lg-4 col-6 align-item-center text-center">
-        <div class="card ourcar__">
-        <img src="images/motor.jpg" class="card-img-top" alt="...">
-          <div class="card-body ourcar-body">
-          <h5 class="card-title">Nama</h5>
-          <p class="card-text"><span>100k</span> / day</p>
-          <a href="#" class="btn btncar1">Details </a>
-          <a href="#" class="btn btn-primary btncar">Order now <i class="fa-brands fa-whatsapp"></i></a>
-          <hr>
+        @foreach ($bike as $bike)
+        <div class="col-lg-4 col-6 align-item-center text-center">
+          <div class="card ourcar__">
+          <img src="{{asset('storage/images/cars/'.$bike->gambar)}}" class="card-img-top" alt="...">
+          @if ($bike->rent == 'yes')
+              <div
+                  class="ourcar__ car-info card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
+                  <h4  class="fw-bold bg-default-secondary text-white p-2  align-items-center justify-content-center">RENTED</h4>
+              </div>
+          @endif
+            <div class="card-body ourcar-body">
+            <h5 class="card-title">{{$bike->name}}</h5>
+            <p class="card-text">{{$bike->transmition}}</p>
+            <p class="card-text "><span>{{$bike->harga}}K</span> / day</p>
+            <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20{{ $bike->name }} seharga Rp.{{number_format($bike->harga,0,",",".")}}K per hari, saya menyewa selama ... hari" class="btn btn-primary btncar">Order now</a>
+            <a href="{{ route('bike.detail', $bike->id) }}" class="btn btncar1">Details</a>
+            <hr>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end ftco-animate">
-      <!-- <button type="button" class="btn btn-outline-primary">See More</button> -->
+        @endforeach
     </div>
     </div>
   </div>

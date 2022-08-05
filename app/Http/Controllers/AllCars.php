@@ -24,7 +24,7 @@ class AllCars extends Controller
             }
         }
 
-        return view('car.all_car',compact('allcars'));
+        return view('car.all_car',compact('allcars','types'));
     }
 
 
