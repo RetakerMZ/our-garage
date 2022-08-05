@@ -46,6 +46,7 @@
           <div class="card-body">
             <form action="{{ route('admin.camera.update', $camera->id )}}" method="POST" enctype="multipart/form-data">
                 @csrf
+            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                        <label for="exampleInputEmail1">Nama Camera</label>
@@ -74,16 +75,16 @@
                    <div class="form-group">
                        <label for="exampleInputEmail1">Optical Zoom</label>
                        <input type="text" name="optical_zoom" class="form-control" id="exampleInputEmail1" placeholder="Optical Zoom"value="{{$camera->optical_zoom}}">
-                     </div>
-                     <div class="form-group">
+                    </div>
+                    <div class="form-group">
                        <label for="exampleInputEmail1">Memory</label>
                        <input type="text" name="memory" class="form-control" id="exampleInputEmail1" placeholder="Memory"value="{{$camera->memory}}">
-                     </div>
+                    </div>
                    <div class="form-group">
                        <label for="exampleInputEmail1">Keterangan</label>
                        <textarea name="keterangan" class="form-control" id="exampleInputEmail1" placeholder="Keterangan" rows="3">
                         {{ old('keterangan') }}</textarea>
-                     </div>
+                    </div>
                    <div class="form-group">
                        <label for="exampleInputFile">Gambar Camera</label>
                        <div class="input-group">
@@ -94,6 +95,7 @@
                        </div>
                      </div>
                  </div>
+            </div>
               <div class="mx-auto">
                   <button type="submit" class="btn btn-primary mr-2">Submit</button>
                   <a class="btn btn-danger" href="{{ route('admin.camera.index') }}">cancel</a>
