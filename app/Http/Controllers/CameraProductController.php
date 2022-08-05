@@ -6,14 +6,19 @@ use App\Models\Camera;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class CameraController extends Controller
+class CameraProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function index(Request $request)
+    {
+        $camera = Camera::all();
 
+        return view('camera.camera',compact('camera'));
+    }
 
 
     /**
