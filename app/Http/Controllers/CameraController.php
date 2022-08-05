@@ -16,6 +16,11 @@ class CameraController extends Controller
         return view('admin.camera.index',compact('camera'));
     }
 
+    public function create()
+    {
+        return view('admin.camera.create');
+    }
+
     public function edit($id)
     {
         //
