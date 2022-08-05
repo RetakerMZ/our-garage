@@ -50,6 +50,7 @@ Route::prefix('car')->group(function(){
 
 Route::prefix('bike')->group(function(){
     Route::get('/',[BikeProductController::class,'index'])->name('bike.index');
+    Route::get('/{id}',[BikeProductController::class,'allbike'])->name('bike_detail.index');
 
 });
 
@@ -90,6 +91,8 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/bike/{id}', [BikeController::class, 'edit'])->name('admin.bike.edit');
     Route::post('/bike/update/{id}', [BikeController::class, 'update'])->name('admin.bike.update');
     Route::get('/bike/delete/{id}', [BikeController::class, 'delete'])->name('admin.bike.delete');
+    Route::get('/bike/available/{id}', [BikeController::class, 'available'])->name('admin.bike.available');
+    Route::get('/bike/rented/{id}', [BikeController::class, 'rented'])->name('admin.bike.rented');
 
     //Kategori Motor
     Route::get('/bike_type/index', [BikeTypeController::class, 'index'])->name('admin.bike_type.index');
@@ -98,6 +101,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/bike_type/{id}', [BikeTypeController::class, 'edit'])->name('admin.bike_type.edit');
     Route::get('/bike_type/delete/{id}', [BikeTypeController::class, 'delete'])->name('admin.bike_type.delete');
     Route::post('/bike_type/update/{id}', [BikeTypeController::class, 'update'])->name('admin,bike_type.update');
+    
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
     Route::post('/testimoni/insert', [TestimoniController::class, 'insert'])->name('testimoni.insert');

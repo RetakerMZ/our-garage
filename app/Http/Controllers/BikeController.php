@@ -127,4 +127,23 @@ class BikeController extends Controller
             return redirect()->back();
         }
     }
+    public function available ($id)
+    {
+        //
+        $bike = Bike::find($id);
+        $update = $bike->update([
+            'rent' => 'no',
+        ]);
+        return back();
+    }
+
+    public function rented ($id)
+    {
+        //
+        $bike = Bike::find($id);
+        $update = $bike->update([
+            'rent' => 'yes',
+        ]);
+        return back();
+    }
 }

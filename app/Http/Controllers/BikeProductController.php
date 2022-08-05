@@ -20,4 +20,11 @@ class BikeProductController extends Controller
 
         return view('bike.bike',compact('bike','type'));
     }
+    public function allbike(Request $request)
+    {
+        $bike = Bike::find($request->id);
+        $type = BikeType::all();
+
+        return view('bike.bike_detail',compact('bike','type'));
+    }
 }

@@ -33,13 +33,17 @@
                       <th>Keterangan</th>
                       <th>Gambar</th>
                       <th>Rent</th>
-
                       <th>Aksi</th>
+                      <th>Available</th>
                     </tr>
                   </thead>
                   <tbody>
+                  <?php $i=0; ?>
+                    
                     @foreach ($bike as $row)
-                    <tr>
+                    <?php  $i++; ?>
+                    <?php $bg=($i%2==0?'#E1E5EA':'white'); ?>
+                    <tr style="background-color: <?php echo $bg; ?>; border-style: solid; border-width: 1px;">
                       <td>{{$row->name}}</td>
                       <td>{{$row->tipe_motor}}</td>
                       <td>{{$row->harga}}</td>
@@ -61,6 +65,13 @@
                             <button type="submit" class="btn btn-sm btn-outline-danger"><i
                                     class="far fa-trash-alt"></i> Hapus</button>
                         </form>
+                      </td>
+                      <td>
+                        <?php if ($row->rent == 'no') : ?>
+                            <a id="btn-{{$row->id}}" class="btn btn-warning" href="{{route ('admin.bike.rented', $row->id)}}">Available</a>
+                        <?php else : ?>
+                            <a id="btn-{{$row->id}}" class="btn btn-danger" href="{{route ('admin.bike.available', $row->id)}}">Rented</a>
+                        <?php endif; ?>
                       </td>
                     </tr>
                     @endforeach

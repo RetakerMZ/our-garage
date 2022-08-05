@@ -78,7 +78,9 @@
             </div>
           </div> -->
           <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate mb-5">
+          <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20{{ $details->nama }} {{ $details->transmition }} seharga Rp.{{number_format($details->harga,0,",",".")}}K per hari, saya menyewa selama ... hari" >
       <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
+      </a>
     </div>
 
     </div>
