@@ -12,7 +12,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-          <a href="{{ route('admin.bike.index') }}" class="nav-link">
+          <a href="{{ route('admin.camera.index') }}" class="nav-link">
             <h1>Edit Data Bike </h1>
 </a>
           </div>
@@ -44,28 +44,28 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <form action="{{ route('admin.bike.update', $bike->id )}}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.camera.update', $camera->id )}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="col-md-6">
                     <div class="form-group">
                        <label for="exampleInputEmail1">Nama Camera</label>
-                       <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="Nama Camera" value="{{$bike->nama}}">
+                       <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="Nama Camera" value="{{$camera->nama}}">
                      </div>
                      <div class="form-group">
                        <label for="exampleInputEmail1">Harga</label>
-                       <input type="text" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000"value="{{$bike->harga}}">
+                       <input type="text" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000"value="{{$camera->harga}}">
                      </div>
                      <div class="form-group">
                        <label for="exampleInputEmail1">Pixel</label>
-                       <input type="text" name="pixel" class="form-control" id="exampleInputEmail1" placeholder="Pixel"value="{{$bike->pixel}}">
+                       <input type="text" name="pixel" class="form-control" id="exampleInputEmail1" placeholder="Pixel"value="{{$camera->pixel}}">
                      </div>
                      <div class="form-group">
                        <label for="exampleInputEmail1">Battery</label>
-                       <input type="text" name="Battrey" class="form-control" id="exampleInputEmail1" placeholder="Battery"value="{{$bike->battrey}}">
+                       <input type="text" name="Battrey" class="form-control" id="exampleInputEmail1" placeholder="Battery"value="{{$camera->battrey}}">
                      </div>
                      <div class="form-group">
                        <label for="exampleInputEmail1">Display</label>
-                       <input type="text" name="display" class="form-control" id="exampleInputEmail1" placeholder="Display" value="{{$bike->display}}">
+                       <input type="text" name="display" class="form-control" id="exampleInputEmail1" placeholder="Display" value="{{$camera->display}}">
                      </div>
 
                  </div>
@@ -73,11 +73,11 @@
                  <div class="col-md-6">
                    <div class="form-group">
                        <label for="exampleInputEmail1">Optical Zoom</label>
-                       <input type="text" name="optical_zoom" class="form-control" id="exampleInputEmail1" placeholder="Optical Zoom"value="{{$bike->optical_zoom}}">
+                       <input type="text" name="optical_zoom" class="form-control" id="exampleInputEmail1" placeholder="Optical Zoom"value="{{$camera->optical_zoom}}">
                      </div>
                      <div class="form-group">
                        <label for="exampleInputEmail1">Memory</label>
-                       <input type="text" name="memory" class="form-control" id="exampleInputEmail1" placeholder="Memory"value="{{$bike->memory}}">
+                       <input type="text" name="memory" class="form-control" id="exampleInputEmail1" placeholder="Memory"value="{{$camera->memory}}">
                      </div>
                    <div class="form-group">
                        <label for="exampleInputEmail1">Keterangan</label>
