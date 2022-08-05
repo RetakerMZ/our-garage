@@ -23,7 +23,7 @@
           <div class="col-lg-2 col-md-4 col-4 car__">
             <div class="category-car">
               <div class="categoryimg">
-                <a href="{{ route('allcar', $tipe->tipe_mobil) }}"><img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt=""></a>
+                <a href="{{ route('allcar', ['tipe_mobil[]' => $tipe->tipe_mobil]) }}"><img src="{{asset('storage/images/tipe_mobils/'.$tipe->gambar)}}" alt=""></a>
                 <p>{{$tipe->tipe_mobil}}</p>
               </div>
             </div>
