@@ -18,6 +18,7 @@ class AllCars extends Controller
     {
         $allcars = Car::all();
         $types = CarType::all();
+        dd($request->tipe_mobil);
         if(!empty($request->tipe_mobil)){
             if(count($request->tipe_mobil) != count($types)){
                 $allcars = $allcars->whereIn('tipe_mobil',$request->tipe_mobil);
