@@ -18,7 +18,6 @@
 
   @include('admin.layouts.nav')
 
-
   @yield('content')
 </body>
 

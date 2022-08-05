@@ -92,12 +92,12 @@
                   <p>Manage Camera</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="../layout/top-nav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">

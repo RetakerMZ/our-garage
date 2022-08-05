@@ -4,6 +4,7 @@ use App\Http\Controllers\AllCars;
 use App\Http\Controllers\DetailCars;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\CameraController;
 use App\Http\Controllers\BikeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
@@ -31,10 +32,7 @@ use App\Http\Controllers\BikeProductController;
 Route::get('/login', function () {
     return view('admin.auth.login');
 });
-Route::get('/detail_bike', function () {
-    return view('bike.bike_detail');
-});
-
+Route::get('/camera',[CameraController::class,'index'])->name('camera');
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
