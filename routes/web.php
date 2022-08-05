@@ -33,7 +33,7 @@ use App\Http\Controllers\BikeProductController;
 Route::get('/login', function () {
     return view('admin.auth.login');
 });
-Route::get('/camera',[CameraProductController::class,'index'])->name('camera');
+
 Route::get('/carousel', function () {
     return view('layout.carousel');
 });
@@ -52,6 +52,8 @@ Route::prefix('bike')->group(function(){
     Route::get('/{id}',[BikeProductController::class,'allbike'])->name('bike_detail.index');
 
 });
+
+Route::get('/camera',[CameraProductController::class,'index'])->name('camera');
 
 
 //Login
@@ -110,7 +112,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/camera/delete/{id}', [CameraController::class, 'delete'])->name('admin.camera.delete');
     Route::get('/camera/available/{id}', [CameraController::class, 'available'])->name('admin.camera.available');
     Route::get('/camera/rented/{id}', [CameraController::class, 'rented'])->name('admin.camera.rented');
-    
+
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
     Route::post('/testimoni/insert', [TestimoniController::class, 'insert'])->name('testimoni.insert');
