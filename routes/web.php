@@ -100,6 +100,16 @@ Route::middleware(['auth'])->prefix('admin')->group(function() {
     Route::get('/bike_type/{id}', [BikeTypeController::class, 'edit'])->name('admin.bike_type.edit');
     Route::get('/bike_type/delete/{id}', [BikeTypeController::class, 'delete'])->name('admin.bike_type.delete');
     Route::post('/bike_type/update/{id}', [BikeTypeController::class, 'update'])->name('admin,bike_type.update');
+
+    //camera
+    Route::get('/camera/create', [CameraController::class, 'create'])->name('admin.camera.create');
+    Route::get('/camera/index', [CameraController::class, 'index'])->name('admin.camera.index');
+    Route::post('/camera/insert', [CameraController::class, 'insert'])->name('admin.camera.insert');
+    Route::get('/camera/{id}', [CameraController::class, 'edit'])->name('admin.camera.edit');
+    Route::post('/camera/update/{id}', [CameraController::class, 'update'])->name('admin.camera.update');
+    Route::get('/camera/delete/{id}', [CameraController::class, 'delete'])->name('admin.camera.delete');
+    Route::get('/camera/available/{id}', [CameraController::class, 'available'])->name('admin.camera.available');
+    Route::get('/camera/rented/{id}', [CameraController::class, 'rented'])->name('admin.camera.rented');
     
     //testimoni
     Route::resource('testimoni', TestimoniController::class);
