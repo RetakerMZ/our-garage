@@ -13,7 +13,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
           <a href="{{ route('admin.camera.index') }}" class="nav-link">
-            <h1>Tambah Data Motor</h1>
+            <h1>Tambah Data Camera</h1>
 </a>
           </div>
           <div class="col-sm-6">
@@ -44,55 +44,49 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <form action="{{ route('admin.car.insert') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.camera.insert') }}" method="POST" enctype="multipart/form-data">
                 @csrf
             <div class="row">
               <div class="col-md-6">
-              <div class="form-group">
+                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama Camera</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                    <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Harga</label>
                     <input type="text" name="harga" class="form-control" id="exampleInputEmail1" placeholder="100000">
                   </div>
-                <div class="form-group">
-                  <label>Bahan Bakar</label>
-                  <select name="fuel" class="form-control select2" style="width: 100%;">
-                  <option selected>Choose Fuel</option>
-                    <option value="Premium">Premium</option>
-                    <option value="Pertalite">Pertalite</option>
-                    <option value="Pertamax">Pertamax</option>
-                    <option value="Pertamax Turbo">Pertamax Turbo</option>>
-                  </select>
-                </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Pixel</label>
+                    <input type="text" name="pixel" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Battery</label>
+                    <input type="text" name="Battrey" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Display</label>
+                    <input type="text" name="display" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                  </div>
+
               </div>
               <!-- /.col -->
               <div class="col-md-6">
                 <div class="form-group">
-                    <label for="tipe_mobil">Tipe Motor</label>
-                    <select class="form-control" id="tipe_motor" name="tipe_motor">
-                        <option value="" selected disabled>Pilih Kategori</option>
-                        @foreach ($bike_type as $bike_types)
-                        <option>{{$bike_types->tipe_motor}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="form-group">
-                  <label>Transmisi</label>
-                  <select name="transmition" class="form-control select2" style="width: 100%;">
-                  <option selected>Choose Transmition</option>
-                    <option value="manual">manual</option>
-                    <option value="automatic">automatic</option>
-                  </select>
-                </div>
+                    <label for="exampleInputEmail1">Optical Zoom</label>
+                    <input type="text" name="optical_zoom" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Memory</label>
+                    <input type="text" name="memory" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                  </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Keterangan</label>
                     <textarea name="keterangan" class="form-control" id="exampleInputEmail1" placeholder="Mobil" rows="3">
                      {{ old('keterangan') }}</textarea>
                   </div>
                 <div class="form-group">
-                    <label for="exampleInputFile">Gambar Motor</label>
+                    <label for="exampleInputFile">Gambar Camera</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" name="gambar" class="form-control" id="gambar"
@@ -103,7 +97,7 @@
               </div>
               <div class="mx-auto">
                   <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                  <a class="btn btn-danger" href="{{ route('admin.bike.index') }}">cancel</a>
+                  <a class="btn btn-danger" href="{{ route('admin.camera.index') }}">cancel</a>
             </div>
               </form>
             </div>

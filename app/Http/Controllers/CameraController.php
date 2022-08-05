@@ -36,7 +36,7 @@ class CameraController extends Controller
             'harga'=> 'required|numeric',
             'gambar' => 'required|file|image',
             'keterangan' => 'nullable|string',
-            
+
         ]);
 
         $fileName = date("Y-m-d-His") . '_' . $request->file('gambar')->getClientOriginalName();
