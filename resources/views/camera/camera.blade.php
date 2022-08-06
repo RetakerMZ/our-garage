@@ -24,12 +24,13 @@
         @foreach ($camera as $camera)
     			<div class="col-md-12 ftco-animate">
     				<div class="">
-	    				<table class="table">
+	    				<table class="table card-body ourcar-body">
 						    <tbody>
 						      <tr>
 						      	<td class="card ourcar__ text-start"><img src="{{asset('storage/images/cameras/'.$camera->gambar)}}" class="card-img-top" alt="...">
 
                     <p class="product-name text-center">{{$camera->nama}}</p>
+                    <p class="card-text "><span>{{$camera->harga}}K</span> / day</p>
                     @if ($camera->rent == 'yes')
               <div
                   class="ourcar__ car-info mt-3 card-img-top d-flex align-items-center justify-content-center">
