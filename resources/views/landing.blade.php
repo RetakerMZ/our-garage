@@ -37,8 +37,8 @@
     <div class="carousel-item">
       <img src="images/camera1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-block">
-        <h5>Kamera & Other's</h5>
-        <p>We Provide Camera, Playstation and Iphone Rental With Affordable Price And Complete Service</p>
+        <h5>Kamera</h5>
+        <p>We Provide Camera Rental With Affordable Price And Complete Service</p>
       </div>
     </div>
     <!-- <div class="carousel-item">

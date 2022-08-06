@@ -20,7 +20,7 @@
 				</div>
 			 </li>
 	          <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
-              <li class="nav-item"><a href="#terms" class="nav-link">Terms of service</a></li>
+              <li class="nav-item"><a href="#testi" class="nav-link">Testimoni</a></li>
 	          <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
 	        </ul>
 	      </div>
