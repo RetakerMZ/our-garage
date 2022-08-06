@@ -16,7 +16,7 @@
 				<a class="dropdown-item" href="{{ route('car') }}">Car</a>
 				<a class="dropdown-item" href="{{route('bike.index')}}">Motorcycle</a>
 				<a class="dropdown-item" href="{{route('camera')}}">Camera</a>
-				<a class="dropdown-item" href="#">BBQ Package</a>
+				<!-- <a class="dropdown-item" href="#">BBQ Package</a> -->
 				</div>
 			 </li>
 	          <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
