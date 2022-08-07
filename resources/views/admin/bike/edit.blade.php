@@ -50,7 +50,7 @@
               <div class="col-md-6">
               <div class="form-group">
                     <label for="exampleInputEmail1">Nama Motor</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nama Mobil" value="{{ $bike->nama }}">
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor" value="{{ $bike->name }}">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Harga</label>
