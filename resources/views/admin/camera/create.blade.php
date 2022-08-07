@@ -62,7 +62,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Battery</label>
-                    <input type="text" name="Battrey" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
+                    <input type="text" name="battrey" class="form-control" id="exampleInputEmail1" placeholder="Nama Motor">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Display</label>

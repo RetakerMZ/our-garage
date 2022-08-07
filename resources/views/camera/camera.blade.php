@@ -18,29 +18,84 @@
         <h2 >OUR CAMERA'S</h2>
       </div>
     </div>
-    <div class="row ftco-animate py-5">
+    <section class="ftco-section ftco-cart">
+			<div class="container-fluid">
+				<div class="row">
         @foreach ($camera as $camera)
-        <div class="col-lg-4 col-6 align-item-center text-center">
-          <div class="card ourcar__">
-          <!-- <img src="{{asset('storage/images/cameras/'.$camera->gambar)}}" class="card-img-top" alt="..."> -->
-          @if ($camera->rent == 'yes')
+    			<div class="col-md-12 ftco-animate">
+    				<div class="">
+	    				<table class="table card-body ourcar-body">
+						    <tbody>
+						      <tr>
+						      	<td class="card ourcar__ text-start"><img src="{{asset('storage/images/cameras/'.$camera->gambar)}}" class="card-img-top" alt="...">
+
+                    <p class="product-name text-center">{{$camera->nama}}</p>
+                    <p class="card-text "><span>{{$camera->harga}}K</span> / day</p>
+                    @if ($camera->rent == 'yes')
               <div
-                  class="ourcar__ car-info card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
+                  class="ourcar__ car-info mt-3 card-img-top d-flex align-items-center justify-content-center">
                   <h4  class="fw-bold bg-default-secondary text-white p-2  align-items-center justify-content-center">RENTED</h4>
               </div>
           @endif
-            <div class="card-body ourcar-body text-center">
-            <h5 class="card-title">{{$camera->nama}}</h5>
-            <p class="text-center">HY</p>
-            <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20kamera {{ $camera->nama }} Apakah item tersebut tersedia?" >
-      <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
-      </a>
-            <hr>
-            </div>
-          </div>
-        </div>
-        @endforeach
-    </div>
+                    </td>
+						        
+                    <td>
+						        	<div>
+							        	<h3>
+							        		<span class="per">Pixel</span>
+							        	</h3>
+							        	<span class="subheading">{{$camera->pixel}}</span>
+						        	</div>
+						        </td>
+
+                    <td>
+						        	<div>
+							        	<h3>
+							        		<span class="per">Memory</span>
+							        	</h3>
+							        	<span class="subheading">{{$camera->memory}}</span>
+						        	</div>
+						        </td>
+
+						        <td>
+						        	<div>
+							        	<h3>
+							        		<span class="per">Battery</span>
+							        	</h3>
+							        	<span class="subheading">{{$camera->battrey}}</span>
+						        	</div>
+						        </td>
+
+                    <td>
+						        	<div>
+							        	<h3>
+							        		<span class="per">Optical Zoom</span>
+							        	</h3>
+							        	<span class="subheading">{{$camera->optical_zoom}}</span>
+						        	</div>
+						        </td>
+
+                    <td>
+						        	<div>
+							        	<h3>
+							        		<span class="per">Display</span>
+							        	</h3>
+							        	<span class="subheading">{{$camera->display}}</span>
+						        	</div>
+						        </td>
+
+                    
+						      </tr><!-- END TR-->
+              @endforeach
+                </tbody>
+						  </table>
+					  </div>
+    			</div>
+
+    		</div>
+			</div>
+		</section>
+
     </div>
   </div>
   </div>

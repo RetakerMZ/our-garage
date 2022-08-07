@@ -26,6 +26,7 @@
                   <thead>
                     <tr>
                       <th>Nama Camera</th>
+                      <th>Harga</th>
                       <th>Pixel</th>
                       <th>Battrey</th>
                       <th>Display</th>
@@ -46,6 +47,7 @@
                     <?php $bg=($i%2==0?'#E1E5EA':'white'); ?>
                     <tr style="background-color: <?php echo $bg; ?>; border-style: solid; border-width: 1px;">
                       <td>{{$row->nama}}</td>
+                      <td>{{$row->harga}}</td>
                       <td>{{$row->pixel}}</td>
                       <td>{{$row->battrey}}</td>
                       <td>{{$row->display}}</td>
@@ -57,7 +59,7 @@
 
                       <td>
                         <form action="{{ route('admin.camera.delete', $row->id) }}"
-                            method="POST"
+                            method="GET"
                             onsubmit="return confirm('Apakah anda yakin menghapus data ini?')">
                             @csrf
                             @method('delete')
