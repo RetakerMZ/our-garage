@@ -105,7 +105,7 @@ class BikeController extends Controller
         ]);
         if($update){
            // Toastr::success('Product berhasil diubah','Berhasil!');
-            return redirect()->route('admin.motor.index')->with('Success','Data Berhasil Diubah');
+            return redirect()->route('admin.bike.index')->with('Success','Data Berhasil Diubah');
         }else{
             //Toastr::error('Product gagal diubah, coba lagi','Gagal!');
             return redirect()->back();
