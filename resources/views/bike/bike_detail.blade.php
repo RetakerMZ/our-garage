@@ -63,7 +63,7 @@
               </div>
             </div>      
           </div> -->
-          <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate">
+          <div class="d-grid gap-2 d-md-flex justify-content-center ftco-animate mb-5">
       <button type="button" class="btn btn-outline-primary">RENT NOW! <i class="fa-brands fa-whatsapp"></i></button>
     </div>
           
