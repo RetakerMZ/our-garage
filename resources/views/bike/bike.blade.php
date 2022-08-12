@@ -46,15 +46,15 @@
         <div class="col-lg-4 col-6 align-item-center text-center">
           <div class="card ourcar__">
           <img src="{{asset('storage/images/bikes/'.$bike->gambar)}}" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
           @if ($bike->rent == 'yes')
-              <div
-                  class="ourcar__ car-info card-img-overlay bg-text card-img-top d-flex align-items-center justify-content-center">
+              <div class="card-img-top align-items-center justify-content-center">
                   <h4  class="fw-bold bg-default-secondary text-white p-2  align-items-center justify-content-center">RENTED</h4>
               </div>
           @endif
+          </div>
             <div class="card-body ourcar-body">
             <h5 class="card-title">{{$bike->name}}</h5>
-            <!-- <p class="card-text">{{$bike->fuel}}</p> -->
             <p class="card-text">{{$bike->transmition}}</p>
             <p class="card-text "><span>{{$bike->harga}}K</span> / day</p>
             <a href="https://api.whatsapp.com/send?phone=6285829261962&text=Halo,%20Kakak%20saya%20ingin%20menyewa%20{{ $bike->name }} {{ $bike->transmition }} seharga Rp.{{number_format($bike->harga,0,",",".")}}K per hari, saya menyewa selama ... hari" class="btn btn-primary btncar">Order now</a>

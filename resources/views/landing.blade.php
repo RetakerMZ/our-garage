@@ -56,7 +56,6 @@
                     <div class="container">
                     <div class="row justify-content-center mt-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
-                <!-- <span class="subheading">Services</span> -->
                 <h2 class="ftco-section">Our Items</h2>
             </div>
             </div>
