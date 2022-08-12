@@ -64,66 +64,41 @@
                     <div class="col-md-12">
                         <div class="carousel-car owl-carousel">
                         <div class="item text-center">
-                                <div class="car-wrap rounded ftco-animate  mx-auto">
+                                <div class=" rounded ftco-animate  mx-auto">
                                   <a href="{{ route('car') }}">
-                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer">
-                                    <img src="/images/bg_1.jpg" alt="">
+                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer;">
+                                      <div class="owl-text-overlay ">
+                                      <h2 class="owl-title">CAR'S</h2>
+                                    </div>
+                                    <img style="border-radius: 10px;" src="/images/bg_1.jpg" alt="">
                                   </a>
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="mb-0 text__"><a href="{{ route('car') }}">Cars</a></h2>
-                                        <div class="d-flex mb-3">
-                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
-                                        </div>
-                                        <p class="d-flex mb-0 d-block"><a href="{{ route('car') }}" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
-                                    </div>
+                                    </div>    
                                 </div>
                             </div>
                             <div class="item text-center">
-                            <div class="car-wrap rounded ftco-animate  mx-auto">
-                                  <a href="{{ route('bike.index') }}">
-                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer">
-                                    <img src="/images/motor1.jpg" alt="">
+                                <div class=" rounded ftco-animate  mx-auto">
+                                <a href="{{ route('bike.index') }}">
+                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer;">
+                                      <div class="owl-text-overlay ">
+                                      <h2 class="owl-title">BIKE'S</h2>
+                                    </div>
+                                    <img style="border-radius: 10px;" src="/images/motor1.jpg" alt="">
                                   </a>
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="mb-0"><a href="{{ route('bike.index') }}">Motorcycle</a></h2>
-                                        <div class="d-flex mb-3">
-                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
-                                        </div>
-                                        <p class="d-flex mb-0 d-block"><a href="{{ route('bike.index') }}" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
-                                    </div>
+                                    </div>    
                                 </div>
                             </div>
                             <div class="item text-center">
-                                <div class="car-wrap rounded ftco-animate  mx-auto">
+                                <div class=" rounded ftco-animate  mx-auto">
                                 <a href="{{ route('camera') }}">
-                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer">
-                                    <img src="/images/camera1.jpg" alt="">
+                                    <div  class="img rounded d-flex align-items-center mx-auto" style="cursor:pointer;">
+                                      <div class="owl-text-overlay ">
+                                      <h2 class="owl-title">CAMERA'S</h2>
+                                    </div>
+                                    <img style="border-radius: 10px;" src="/images/camera1.jpg" alt="">
                                   </a>
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="mb-0"><a href="#">Camera</a></h2>
-                                        <div class="d-flex mb-3">
-                                            <!-- <span>Lorem ipsum dolor sit amet</span> -->
-                                        </div>
-                                        <p class="d-flex mb-0 d-block"><a href="#" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
-                                    </div>
+                                    </div>    
                                 </div>
                             </div>
-                            <!-- <div class="item text-center">
-                                <div class="car-wrap rounded ftco-animate mx-auto">
-                                    <div class="img rounded d-flex align-items-end" style="background-image: url('https://asset.kompas.com/crops/1dJtBHrqNFokppMAhYbzIVYlRDg=/0x1:1404x936/750x500/data/photo/2019/12/28/5e06e5e617700.jpg');">
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="mb-0"><a href="#">BBQ Package</a></h2>
-                                        <div class="d-flex mb-3">
-                                        </div>
-                                        <p class="d-flex mb-0 d-block"><a href="#" class="btn mx-auto btn-info py-2 ml-1">Details</a></p>
-                                    </div>
-                                </div>
-                            </div> -->
-
                         </div>
                     </div>
                 </div>

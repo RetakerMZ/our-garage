@@ -10954,55 +10954,55 @@ h5,
         margin-bottom: 40px;
     }
 }
-@media (min-width: 992px) { .services-wrap {
-    padding: 4em 3em;
-    background: #fff;
-    -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
-    -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
-    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
-}
-.services-wrap .heading-section {
-    font-size: 24px;
-    font-weight: 600;
-}
+@media (min-width: 992px) {
+    .services-wrap {
+        padding: 4em 3em;
+        background: #fff;
+        -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+        -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+    }
+    .services-wrap .heading-section {
+        font-size: 24px;
+        font-weight: 600;
+    }
 
-.services .icon {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-.services .icon span {
-    font-size: 40px;
-    color: #1089ff;
-}
+    .services .icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .services .icon span {
+        font-size: 40px;
+        color: #1089ff;
+    }
 
-.services h3 {
-    font-size: 17px;
-    font-weight: 500;
-}
+    .services h3 {
+        font-size: 17px;
+        font-weight: 500;
+    }
 
-.services.services-2 .icon {
-    width: 110px;
-    height: 110px;
-    background: #1089ff;
-    border: none;
-}
-.services.services-2 .icon span {
-    color: #fff;
-}
+    .services.services-2 .icon {
+        width: 110px;
+        height: 110px;
+        background: #1089ff;
+        border: none;
+    }
+    .services.services-2 .icon span {
+        color: #fff;
+    }
 
-.ftco-intro {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    overflow: hidden;
-    z-index: 0;
+    .ftco-intro {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+        z-index: 0;
+    }
 }
-
- }
 .services-wrap {
     padding: 4em 3em;
     background: #fff;
@@ -11047,70 +11047,70 @@ h5,
         font-size: 10px;
         font-weight: 500;
     }
-    .terms_{
+    .terms_ {
         padding-left: 30px;
         padding-right: 30px;
         margin-top: 25px;
         margin-bottom: -40px;
     }
-    .terms__{
+    .terms__ {
         font-size: 15px !important;
         font-weight: 500;
         margin-top: -25px;
         text-align: justify;
     }
-    .terms__ span{
+    .terms__ span {
         font-weight: 900;
-        color:#000;
+        color: #000;
     }
-    .terms_ .terms1__{
+    .terms_ .terms1__ {
         text-align: justify !important;
         font-size: 15px !important;
         font-weight: 500;
         margin-top: -30px;
     }
-    .terms_ .terms2__{
+    .terms_ .terms2__ {
         text-align: justify !important;
         font-size: 15px !important;
         font-weight: 600;
         margin-top: -30px;
         color: #000;
     }
-    .terms_ .terms3__{
+    .terms_ .terms3__ {
         text-align: start !important;
         font-size: 15px !important;
         font-weight: 400;
         margin-top: -70px;
         color: #000;
     }
- }
- .terms_{
+}
+.terms_ {
     margin-top: 25px;
     margin-bottom: -40px;
 }
-.terms__{
+.terms__ {
     color: #000;
     font-size: 10px;
     font-weight: 350;
     margin-top: -25px;
 }
-.terms_ .terms1__{
+.terms_ .terms1__ {
     text-align: start;
     color: #000;
     font-size: 10px;
     font-weight: 350;
     margin-top: -30px;
 }
-.terms_ .terms2__{
+.terms_ .terms2__ {
     text-align: start !important;
-    font-size: 10px ;
+    font-size: 10px;
     font-weight: 600;
     margin-top: -30px;
     color: #000;
 }
-.terms_ .terms3__{
+.terms_ .terms3__ {
     text-align: start !important;
-    font-size: 10px ;
+    font-size: 10px;
     font-weight: 400;
     margin-top: -70px;
     color: #000;
@@ -11298,10 +11298,10 @@ textarea.form-control {
         color: rgba(255, 255, 255, 0.8);
         line-height: 0.7;
     }
-    .kontak__{
+    .kontak__ {
         font-size: 10px !important;
     }
-    .kontak1__{
+    .kontak1__ {
         font-size: 10px !important;
         padding: 0;
     }
@@ -11328,13 +11328,13 @@ textarea.form-control {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
- }
- @media (min-width: 992px) {
+}
+@media (min-width: 992px) {
     .ftco-footer .ftco-footer-widget ul li a {
         font-size: 15px;
         color: rgba(255, 255, 255, 0.8);
     }
-  }
+}
 .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: var(--primarycolor);
@@ -11621,7 +11621,7 @@ textarea.form-control {
 .testimony-wrap {
     display: block;
     position: relative;
-    background:var(--light);
+    background: var(--light);
     padding: 0 20px;
 }
 .testimony-wrap .user-img {
@@ -11642,7 +11642,7 @@ textarea.form-control {
 }
 .testimony-wrap .position {
     font-size: 16px;
-    color:#01d28e;
+    color: #01d28e;
 }
 
 @media (max-width: 767.98px) {
@@ -12370,7 +12370,6 @@ textarea.form-control {
         background-size: cover;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
     }
-
 }
 
 /* END JUMBOTRON */
@@ -12683,68 +12682,65 @@ textarea.form-control {
 }
 /* END SECTION HEADING */
 
-
-
 /* CAROUSEL */
-.carousel-item img{
+.carousel-item img {
     margin-top: 70px;
 }
-.carousel-caption{
+.carousel-caption {
     margin-bottom: 40px;
 }
-.carousel-caption h5{
+.carousel-caption h5 {
     font-size: 13px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
 }
-.carousel-caption .capt__{
+.carousel-caption .capt__ {
     margin-top: 50px !important;
     text-align: start;
     margin-right: 10px;
 }
-.carousel-caption .capt__2{
+.carousel-caption .capt__2 {
     text-align: end;
 }
-.carousel-caption span{
+.carousel-caption span {
     font-weight: 200;
 }
-.carousel-caption p{
+.carousel-caption p {
     margin-top: -10px;
     font-size: 6px;
 }
 @media (min-width: 576px) {
-    .carousel-item img{
+    .carousel-item img {
         margin-top: 50px;
     }
-    .carousel-item{
+    .carousel-item {
         height: 100vh;
         min-height: 300px;
         background: no-repeat scroll center scroll;
         background-size: cover;
         -webkit-background-size: cover;
     }
-    .carousel-caption h5{
+    .carousel-caption h5 {
         font-size: 70px;
         margin-top: -300px;
         color: white;
         text-transform: uppercase;
         font-weight: 700;
     }
-    .carousel-caption p{
+    .carousel-caption p {
         margin-top: -15px;
         font-size: 18px;
     }
-    .carousel-caption .capt__2{
+    .carousel-caption .capt__2 {
         text-align: start !important;
     }
- }
-
+}
 
 /*END CAROUSEL */
 
 /* CAR PAGE  FIND CAR BY MODEL*/
-.categoryimg img{
+.categoryimg img {
     /* border: none; */
 
     width: 4em;
@@ -12752,12 +12748,12 @@ textarea.form-control {
     display: block;
     cursor: pointer;
 }
-.car__{
+.car__ {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.categoryimg img{
+.categoryimg img {
     /* border: none; */
 
     display: block;
@@ -12766,46 +12762,45 @@ textarea.form-control {
     margin-bottom: 20px;
     cursor: pointer;
 }
-.category-car p{
+.category-car p {
     font-weight: 500;
     font-size: 10px;
 }
-.title h2{
+.title h2 {
     font-size: small;
     font-weight: 700;
 }
-.title p{
+.title p {
     color: #000;
     font-size: 10px;
     margin-top: -15px;
 }
-.tipe__ p{
+.tipe__ p {
     font-size: 10px;
     color: #000;
 }
 @media (min-width: 768px) {
-    .categoryimg img{
+    .categoryimg img {
         height: 8em;
         width: 15em;
         margin-left: -45px;
     }
-    .category-car p{
+    .category-car p {
         font-weight: 500;
         font-size: 15px;
         text-align: center;
         margin-left: 15px;
     }
-    .title h2{
-        font-size:40px;
+    .title h2 {
+        font-size: 40px;
         font-weight: 700;
     }
-    .title p{
+    .title p {
         color: #000;
         font-size: 20px;
         margin-top: -15px;
     }
-
- }
+}
 /* END CAR PAGE  FIND CAR BY MODEL*/
 /* RECENT CAR */
 @media (min-width: 992px) {
@@ -12862,18 +12857,16 @@ textarea.form-control {
         width: 50%;
         font-size: 15px !important;
     }
-    .card-wrap .text__ h2{
+    .card-wrap .text__ h2 {
         font-size: 20px;
     }
-
- }
+}
 
 .car-wrap {
     margin-bottom: 25px;
     padding-bottom: 0;
     width: 220px;
     height: 100%;
-
 }
 
 .car-wrap .img {
@@ -12919,35 +12912,33 @@ textarea.form-control {
     font-weight: 600;
     width: 50%;
 }
-.ourcar__ img{
+.ourcar__ img {
     width: 100%;
-
 }
-.ourcar__{
+.ourcar__ {
     width: 8rem;
     border: none;
     margin-bottom: 10px;
     background-color: var(--light);
 }
-.ourcar-body h5{
+.ourcar-body h5 {
     font-size: 15px;
     font-weight: 600;
     margin-top: -10px;
-
 }
 .ourcar-body span {
     margin-top: -15px;
 }
-.ourcar-body p{
+.ourcar-body p {
     font-size: 10px;
     font-weight: 600;
     text-align: end;
 }
-.ourcar-body p span{
+.ourcar-body p span {
     font-size: 10px;
     font-weight: 600;
     text-align: end;
-    color:#007bff;
+    color: #007bff;
 }
 .ourcar__ .btncar {
     margin-top: -15px;
@@ -12962,30 +12953,29 @@ textarea.form-control {
     background-color: #01d28e;
 }
 @media (min-width: 768px) {
-    .ourcar__{
+    .ourcar__ {
         width: 20rem;
         border: none;
         margin-bottom: 10px;
     }
-    .ourcar-body h5{
+    .ourcar-body h5 {
         font-size: 25px;
         font-weight: 600;
         margin-top: -10px;
-
     }
     .ourcar-body span {
         margin-top: -15px;
     }
-    .ourcar-body p{
+    .ourcar-body p {
         font-size: 15px;
         font-weight: 300;
         text-align: end;
     }
-    .ourcar-body p span{
+    .ourcar-body p span {
         font-size: 15px;
         font-weight: 600;
         text-align: end;
-        color:#007bff;
+        color: #007bff;
     }
     .ourcar__ .btncar {
         margin-top: -15px;
@@ -13001,93 +12991,92 @@ textarea.form-control {
     }
 }
 /* SERVICES */
-.allcars{
+.allcars {
     padding-top: 5em !important;
 }
-.cardetails{
+.cardetails {
     padding-top: 6em !important;
 }
 @media (min-width: 768px) {
-    .services-2 h3{
+    .services-2 h3 {
         font-size: 20px !important;
     }
-    .services-2 p{
+    .services-2 p {
         font-size: 15px !important;
     }
- }
-    .services-2 h3{
-        font-size: 15px;
-    }
-    .services-2 p{
-        font-size: 10px;
-    }
+}
+.services-2 h3 {
+    font-size: 15px;
+}
+.services-2 p {
+    font-size: 10px;
+}
 
 /* END SERVICES */
 
 /* END RECENT CAR */
-.carousel-car .text h2{
+.carousel-car .text h2 {
     font-size: 50px;
 }
 
 /* CAR DETAIL */
-.cardetail_{
+.cardetail_ {
     border: none;
 }
-.cardetail_ img{
+.cardetail_ img {
     height: 50%;
     width: 70%;
     align-self: center;
 }
-.cardetail_ .name{
+.cardetail_ .name {
     font-size: 15px;
 }
-.cardetail_ p{
+.cardetail_ p {
     text-align: center;
     font-size: 15px;
     font-weight: 500;
 }
-.cardetail_ .card-text span{
+.cardetail_ .card-text span {
     text-align: center;
     font-size: 15px;
     font-weight: 700;
     color: #01d28e;
 }
-.cardetail_ .icon__ i{
-color: #01d28e;
+.cardetail_ .icon__ i {
+    color: #01d28e;
 }
 @media (min-width: 768px) {
-    .cardetail_ img{
+    .cardetail_ img {
         height: 30%;
         width: 33%;
         align-self: center;
     }
-    .cardetail_{
+    .cardetail_ {
         border: none;
     }
-    .cardetail_ .name{
+    .cardetail_ .name {
         font-size: 35px;
     }
 
-    .cardetail_ p{
+    .cardetail_ p {
         text-align: center;
         font-size: 25px;
         font-weight: 500;
     }
-    .cardetail_ .card-text span{
+    .cardetail_ .card-text span {
         text-align: center;
         font-size: 25px;
         font-weight: 700;
         color: #01d28e;
     }
-    .cardetail_ .icon__ i{
-    color: #01d28e;
-    font-size: 35px;
+    .cardetail_ .icon__ i {
+        color: #01d28e;
+        font-size: 35px;
     }
- }
+}
 /*END CAR DETAIL */
 
- 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .card-img-overlay {
         position: absolute;
         top: 0;
@@ -13098,11 +13087,10 @@ color: #01d28e;
         border-radius: calc(0.25rem - 1px);
         text-decoration: #005cbf;
     }
-    
+
     .bg-default-secondary {
         position: absolute;
         background-color: var(--primarycolor) !important;
-        
     }
     .ourcar__ .bg-text {
         position: absolute;
@@ -13113,14 +13101,14 @@ color: #01d28e;
         height: 20rem !important;
         background-color: rgba(1, 210, 142, 0.4);
     }
-    
+
     .car-info h4 {
         border-radius: 10px;
         font-size: large !important;
     }
- }
+}
 
- .card-img-overlay {
+.card-img-overlay {
     position: absolute;
     text-decoration: #005cbf;
 }
@@ -13128,7 +13116,6 @@ color: #01d28e;
 .bg-default-secondary {
     position: absolute;
     background-color: var(--primarycolor) !important;
-    
 }
 .ourcar__ .bg-text {
     position: absolute;
@@ -13143,4 +13130,46 @@ color: #01d28e;
 .car-info h4 {
     border-radius: 5px;
     font-size: xx-small;
+}
+.owl-text-overlay {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2.owl-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+@media (min-width: 768px) {
+    .owl-text-overlay {
+        position: absolute;
+        text-align: center;
+        width: 60%;
+        top: 60%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    h2.owl-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: lightgrey;
+    }
 }
